@@ -1,3 +1,61 @@
+# v1.13.0
+## 07/26/2017
+
+1. [](#improved)
+    * Support for multiple forms and fields in the same page
+1. [](#bugfix)
+    * Fix typo in `SEARCH_FIELD_MINIUMUM_CHARACTERS` translation string
+    * Fixed validation and JS submission
+    * Separated JS from inline to file
+    * Fixed issue with min query length always enforced. It is now possible to have no minimum length by setting to `false` or `0`
+
+# v1.12.0
+## 05/31/2017
+
+1. [](#new)
+   * Added option to switch between Rendered HTML and Raw Markdown content searching. Raw Markdown is faster than default.
+
+# v1.11.0
+## 05/29/2017
+
+1. [](#new)
+    * Allow to use "@none"/"none@" in the "Category filter" in Admin to allow removing the filter
+
+# v1.10.2
+## 04/19/2017
+
+1. [](#bugfix)
+    * Only check ACL if the Login plugin is installed [#112](https://github.com/getgrav/grav-plugin-simplesearch/pull/112)
+
+# v1.10.1
+## 04/11/2017
+
+1. [](#new)
+    * Added Portuguese translation
+    * Add hint when the minimum search field length is not matched
+1. [](#bugfix)
+    * Default `ignore_accented_characters` to false
+    * Fallback to regular search if searching with `ignore_accented_characters` on an unsupported charset raises an exception [#107](https://github.com/getgrav/grav-plugin-simplesearch/issues/107)
+    * Check ACL before listing a page in the search results [#102](https://github.com/getgrav/grav-plugin-simplesearch/pull/102)
+    * Fix with ignoring `min_query_length` when using the button [#99](https://github.com/getgrav/grav-plugin-simplesearch/issues/99)
+
+# v1.10.0
+## 01/23/2017
+
+1. [](#new)
+    * Added spanish translation
+    * Added japanese translation
+    * Added persian translation
+1. [](#improved)
+    * Added option to switch between Rendered HTML and Raw Markdown content searching.  Raw Markdown is faster than default.
+    * Removed jQuery dependency, fixes issue when jQuery is loaded in the footer [#57](https://github.com/getgrav/grav-plugin-simplesearch/pull/57)
+    * Added option to ignore accents when searching [#89](https://github.com/getgrav/grav-plugin-simplesearch/pull/89)
+1. [](#bugfix)
+    * Remove unpublished and un-routable pages from the result set
+    * Fixed issue when using @self as route
+    * Fix overloaded property issue when searching on a page with simplesearch header [#80](https://github.com/getgrav/grav-plugin-simplesearch/issues/80)
+    * Fix issue with empty string and leading commas [#71](https://github.com/getgrav/grav-plugin-simplesearch/issues/71)
+
 # v1.9.3
 ## 10/19/2016
 

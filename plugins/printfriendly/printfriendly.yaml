@@ -1,0 +1,83 @@
+# Global plugin configurations.
+enabled: true                   # Set to false to disable this plugin completely.
+built_in_css: true              # Use built-in CSS of the plugin.
+
+basics:
+  btn_plugin: 
+  icn_plugin: 
+  print_directly: false         # Print directly avoiding the window. In this case the library JQuery UI is not needed.
+
+# jQuery user interface library, Font Awesome, the iconic font and CSS framework.
+libraries:
+  jqueryui_source: maxcdn       # Set source between your server or MaxCDN.
+  jqueryui_version: 1.12.1      # Set version.
+  jqueryui_themes: start        # Set theme for window.
+  awesome_use_font: false       # Set true to use the library.
+
+# Some items you can include in printing.
+settings:
+
+  page:
+    image: true                 # It refers to the first image in the folder.
+                                # However, all images including the first are printed if the img tag is present in allowed_tags.
+    title: true
+    author: true
+    date: true
+    date_format: short
+    tags: true
+
+  breadcrumbs:
+    enabled: true
+    link: true
+    current: true
+
+# The strip_tags function delete from a html document all tags except those listed.
+# You can add or delete tags elements.
+tags:
+  allowed_tags:
+    - a
+    - b
+    - blockquote
+    - br
+    - center
+    - cite
+    - code
+    - div
+    - em
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - hr
+    - i
+    - img
+    - li
+    - ol
+    - p
+    - pre
+    - small
+    - span
+    - strong
+    - sub
+    - sup
+    - table
+    - tbody
+    - td
+    - textarea
+    - tfoot
+    - th
+    - thead
+    - tr
+    - u
+    - ul
+
+# Window size.
+window:
+  width: 50                     # A percentage of the maximum size of the device width.
+  height: 40                    # A percentage of the maximum size of the device height.
+  closeonescape: false
+  close_icon: false
+  confirm_button: Print
+  cancel_button: Close

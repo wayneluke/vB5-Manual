@@ -9,6 +9,7 @@ use Grav\Common\Page\Types;
 use Grav\Common\Taxonomy;
 use Grav\Common\Utils;
 use Grav\Common\Data\Data;
+use Grav\Common\Config\Config;
 use RocketTheme\Toolbox\Event\Event;
 
 class SimplesearchPlugin extends Plugin
@@ -82,6 +83,17 @@ class SimplesearchPlugin extends Plugin
     {
         $page = $this->grav['page'];
 
+        $route = null;
+        if (isset($page->header()->simplesearch['route'])) {
+            $route = $page->header()->simplesearch['route'];
+
+            // Support `route: '@self'` syntax
+            if ($route === '@self') {
+                $route = $page->route();
+                $page->header()->simplesearch['route'] = $route;
+            }
+        }
+
         // If a page exists merge the configs
         if ($page) {
             $this->config->set('plugins.simplesearch', $this->mergeConfig($page));
@@ -92,24 +104,13 @@ class SimplesearchPlugin extends Plugin
         $query = $uri->param('query') ?: $uri->query('query');
         $route = $this->config->get('plugins.simplesearch.route');
 
-        // performance check for query
-        if (empty($query)) {
-            return;
-        }
-
-        // Support `route: '@self'` syntax
-        if($route === '@self') {
-            $route = $page->route();
-            $this->config->set('plugins.simplesearch.route', $route);
-        }
-
         // performance check for route
         if (!($route && $route == $uri->path())) {
             return;
         }
 
-        // Explode query into multiple strings
-        $this->query = explode(',', $query);
+        // Explode query into multiple strings. Drop empty values
+        $this->query = array_filter(array_filter(explode(',', $query), 'trim'), 'strlen');
 
         /** @var Taxonomy $taxonomy_map */
         $taxonomy_map = $this->grav['taxonomy'];
@@ -120,10 +121,21 @@ class SimplesearchPlugin extends Plugin
         $operator = $this->config->get('plugins.simplesearch.filter_combinator', 'and');
         $new_approach = false;
 
-        if ( ! $filters || $query === false || (count($filters) == 1 && !reset($filters))) {
+        // if @none found, skip processing taxonomies
+        $should_process = true;
+        if (is_array($filters)) {
+            $the_filter = reset($filters);
+
+            if (is_array($the_filter)) {
+                if (in_array(reset($the_filter), ['@none', 'none@'])) {
+                    $should_process = false;
+                }
+            }
+        }
+
+        if (!$should_process || !$filters || $query === false || (count($filters) == 1 && !reset($filters))) {
             /** @var \Grav\Common\Page\Pages $pages */
             $pages = $this->grav['pages'];
-
             $this->collection = $pages->all();
         } else {
 
@@ -158,7 +170,13 @@ class SimplesearchPlugin extends Plugin
             }
         }
 
+        //Drop unpublished and unroutable pages
+        $this->collection->published()->routable();
 
+        //Check if user has permission to view page
+        if($this->grav['config']->get('plugins.login.enabled')) {
+            $this->collection = $this->checkForPermissions($this->collection);
+        }
         $extras = [];
 
         if ($query) {
@@ -212,6 +230,55 @@ class SimplesearchPlugin extends Plugin
         }
     }
 
+    /**
+     * Filter the pages, and return only the pages the user has access to.
+     * Implementation based on Login Plugin authorizePage() function.
+     */
+    public function checkForPermissions($collection)
+    {
+        $user = $this->grav['user'];
+        $returnCollection = new Collection();
+        foreach ($collection as $page) {
+
+            $header = $page->header();
+            $rules = isset($header->access) ? (array)$header->access : [];
+
+            if ($this->config->get('plugins.login.parent_acl')) {
+                // If page has no ACL rules, use its parent's rules
+                if (!$rules) {
+                    $parent = $page->parent();
+                    while (!$rules and $parent) {
+                        $header = $parent->header();
+                        $rules = isset($header->access) ? (array)$header->access : [];
+                        $parent = $parent->parent();
+                    }
+                }
+            }
+
+            // Continue to the page if it has no ACL rules.
+            if (!$rules) {
+                $returnCollection[$page->path()] = ['slug' => $page->slug()];
+            } else {
+                // Continue to the page if user is authorized to access the page.
+                foreach ($rules as $rule => $value) {
+                    if (is_array($value)) {
+                        foreach ($value as $nested_rule => $nested_value) {
+                            if ($user->authorize($rule . '.' . $nested_rule) == $nested_value) {
+                                $returnCollection[$page->path()] = ['slug' => $page->slug()];
+                                break;
+                            }
+                        }
+                    } else {
+                        if ($user->authorize($rule) == $value) {
+                            $returnCollection[$page->path()] = ['slug' => $page->slug()];
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        return $returnCollection;
+    }
 
     /**
      * Set needed variables to display the search results.
@@ -228,15 +295,41 @@ class SimplesearchPlugin extends Plugin
         if ($this->config->get('plugins.simplesearch.built_in_css')) {
             $this->grav['assets']->add('plugin://simplesearch/css/simplesearch.css');
         }
+
+
+        $this->grav['assets']->addJs('plugin://simplesearch/js/simplesearch.js', [ 'group' => 'bottom' ]);
     }
 
+    private function matchText($haystack, $needle) {
+        if ($this->config->get('plugins.simplesearch.ignore_accented_characters')) {
+            setlocale(LC_ALL, 'en_US');
+            try {
+                $result = mb_stripos(iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $haystack), iconv('UTF-8', 'ASCII//TRANSLIT//IGNORE', $needle));
+            } catch (\Exception $e) {
+                $result = mb_stripos($haystack, $needle);
+            }
+            setlocale(LC_ALL, '');
+            return $result;
+        } else {
+            return mb_stripos($haystack, $needle);
+        }
+    }
+
+    /**
+     * @param $query
+     * @param Page $page
+     * @param $taxonomies
+     * @return bool
+     */
     private function notFound($query, $page, $taxonomies)
     {
         $searchable_types = ['title', 'content', 'taxonomy'];
         $results = true;
+        $search_content = $this->config->get('plugins.simplesearch.search_content');
+
         foreach ($searchable_types as $type) {
             if ($type === 'title') {
-                $result = mb_stripos(strip_tags($page->title()), $query) === false;
+                $result = $this->matchText(strip_tags($page->title()), $query) === false;
             } elseif ($type === 'taxonomy') {
                 if ($taxonomies === false) {
                     continue;
@@ -250,14 +343,19 @@ class SimplesearchPlugin extends Plugin
                     }
 
                     $taxonomy_values = implode('|',$values);
-                    if (mb_stripos($taxonomy_values, $query) !== false) {
+                    if ($this->matchText($taxonomy_values, $query) !== false) {
                         $taxonomy_match = true;
                         break;
                     }
                 }
                 $result = !$taxonomy_match;
             } else {
-                $result = mb_stripos(strip_tags($page->content()), $query) === false;
+                if ($search_content == 'raw') {
+                    $content = $page->rawMarkdown();
+                } else {
+                    $content = $page->content();
+                }
+                $result = $this->matchText(strip_tags($content), $query) === false;
             }
             $results = $results && $result;
             if ($results === false ) {

@@ -16,7 +16,7 @@ This is some [u]bb style underline[/u] and not much else
 This is [size=30]bigger text[/size] and this is [color=blue]blue text[/color]
 ```
 
-This example functionality is provided with the **Shortcode Core** plugin to provide some functionality that is not available in traditional markdown but is standard **BBCode** used in many form platforms.  You can see how the syntax is jus ta simple open and close element using square brackets.
+This example functionality is provided with the **Shortcode Core** plugin to provide some functionality that is not available in traditional markdown but is standard **BBCode** used in many form platforms.  You can see how the syntax is just a simple open and close element using square brackets.
 
 This will render:
 
@@ -44,7 +44,8 @@ The **Shortcode Core** plugin only has a few options to configure.  The default 
 enabled: true
 active: true
 active_admin: true
-parser: wordpress
+parser: regex
+custom_shortcodes:
 load_fontawesome: false
 ```
 
@@ -52,7 +53,10 @@ load_fontawesome: false
 * `active: true|false` toggles if shortcodes will be enabled site-wide or not
 * `active_admin: true|false` toggles if shortcodes will be processed in the admin plugin
 * `parser: wordpress|regex|regular` let's you configure the parser to use. 
+* `custom_shortcodes:` the path to a directory where you can put your custom shortcodes (e.g. `/user/custom/shortcodes`)
 * `load_fontawesome: true|false` toggles if the fontawesome icon library should be loaded or not
+
+> NOTE: In previous versions the `wordpress` parser was preferred.  However with version `2.4.0`, the `regex` parser is now default.  If you have saved configuration, you should manually change this to `regex` or you may receive errors or bad output.
 
 ## Configuration Modifications
 
@@ -127,6 +131,52 @@ Right align the text between this shortcode
 
 ```
 [right]This text is right aligned[/right]
+```
+
+#### Columns
+
+Take advantage of powerful CSS columns support by using this shortcode
+
+```
+[columns]
+### Headline
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. 
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. 
+[/columns]
+```
+
+Defaults to 2 columns.  You can also explicitly set the number of `columns`, `width`, `gap`, and `rule` styling for the column divider:
+
+```
+[columns count=3 width=200px gap=30px rule="1px dotted #930"]
+### Headline
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. 
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. 
+[/columns]
 ```
 
 #### Raw
@@ -219,6 +269,15 @@ Danger Will Robinson! Danger, Will Robinson!
 [fa icon=fa-camera-retro extras=fa-4x /] Explicit format with extras - [See FontAwesome Examples](https://fortawesome.github.io/Font-Awesome/examples/)
 
 [fa icon=fa-circle-o-notch extras=fa-spin,fa-3x,fa-fw,margin-bottom /] The full monty! - [See FontAwesome Examples](https://fortawesome.github.io/Font-Awesome/examples/)
+
+## Using Shortcodes in Twig
+
+You can now use shortcodes in Twig templates and process them with the `|shortcodes` filter. For example:
+
+```
+{% set twig_text = "This is [size=30]bigger text[/size] and this is [color=green]green text[/color]" %}
+{{ twig_text|shortcodes }}
+```
 
 ## Developing Shortcode Plugins
 

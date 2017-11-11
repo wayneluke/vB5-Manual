@@ -1,9 +1,9 @@
 <div id="body-inner">
 <h1>{{ page.title }}</h1>
-<p>
-	Reading Time: {{ page.content|readingtime }} - {{ printfriendly(page.route) }}
+<div class="page-content">
+	{{ printfriendly(page.route) }} - Reading Time: {{ page.content|readingtime }} 
 	{{ page.content }}
 
 	Last Modified: {{ page.header.date }}
-</p>
+</div>
 </div>

@@ -1,3 +1,15 @@
+# v1.4.7
+## 05/16/2017
+
+1. [](#improved)
+    * Added check for Exif module if this feature is enabled
+
+# v1.4.6
+## 02/17/2017
+
+1. [](#improved)
+    * Return 500 error code if there is a problem instead of 200 [https://github.com/getgrav/grav/issues/1291](https://github.com/getgrav/grav/issues/1291)
+
 # v1.4.5
 ## 09/14/2016
 

@@ -3,7 +3,6 @@ namespace Grav\Plugin;
 
 use Grav\Common\Page\Page;
 use Grav\Common\Plugin;
-use Grav\Plugin\Shortcodes\ShortCodeObject;
 use RocketTheme\Toolbox\Event\Event;
 
 class ShortcodeCorePlugin extends Plugin
@@ -40,12 +39,13 @@ class ShortcodeCorePlugin extends Plugin
         }
 
         $this->enable([
-            'onMarkdownInitialized' => ['onMarkdownInitialized', 0],
-            'onShortcodeHandlers' => ['onShortcodeHandlers', 0],
-            'onPageContentProcessed' => ['onPageContentProcessed', 0],
-            'onPageInitialized' => ['onPageInitialized', 0],
-            'onTwigPageVariables' => ['onTwigPageVariables', 0],
-            'onTwigSiteVariables' => ['onTwigSiteVariables', 0],
+            'onMarkdownInitialized'     => ['onMarkdownInitialized', 0],
+            'onShortcodeHandlers'       => ['onShortcodeHandlers', 0],
+            'onPageContentProcessed'    => ['onPageContentProcessed', 0],
+            'onPageInitialized'         => ['onPageInitialized', 0],
+            'onTwigInitialized'         => ['onTwigInitialized', 0],
+            'onTwigPageVariables'       => ['onTwigPageVariables', 0],
+            'onTwigSiteVariables'       => ['onTwigSiteVariables', 0],
         ]);
 
         $this->grav['shortcode'] = $this->shortcodes = new ShortcodeManager();
@@ -125,10 +125,18 @@ class ShortcodeCorePlugin extends Plugin
         $page = $this->grav['page'];
         $assets = $this->grav['assets'];
 
+        $meta = [];
+
         // Initialize all page content up front before Twig happens
         if (isset($page->header()->content['items'])) {
             foreach ($page->collection() as $item) {
+                // initialize modular item content
                 $item->content();
+
+                $item_meta = $item->getContentMeta('shortcodeMeta');
+                if ($item_meta) {
+                    $meta = array_merge_recursive($meta, $item_meta);
+                }
             }
         }
 
@@ -136,7 +144,10 @@ class ShortcodeCorePlugin extends Plugin
         $page->content();
 
         // get the meta and check for assets
-        $meta = $page->getContentMeta('shortcodeMeta');
+        $page_meta = $page->getContentMeta('shortcodeMeta');
+        if ($page_meta) {
+            $meta = array_merge_recursive($meta, $page_meta);
+        }
 
         // if assets found, add them to Assets manager
         if (isset($meta['shortcodeAssets'])) {
@@ -155,7 +166,6 @@ class ShortcodeCorePlugin extends Plugin
                 }
             }
         }
-
     }
 
     /**
@@ -164,6 +174,25 @@ class ShortcodeCorePlugin extends Plugin
     public function onShortcodeHandlers()
     {
         $this->shortcodes->registerAllShortcodes(__DIR__.'/shortcodes');
+
+        // Add custom shortcodes directory if provided
+        $custom_shortcodes = $this->config->get('plugins.shortcode-core.custom_shortcodes');
+        if (isset($custom_shortcodes)) {
+            $this->shortcodes->registerAllShortcodes(GRAV_ROOT . $custom_shortcodes);
+        }
+    }
+
+    /**
+     * Add a twig filter for processing shortcodes in templates
+     */
+    public function onTwigInitialized()
+    {
+        $this->grav['twig']->twig()->addFilter(
+            new \Twig_SimpleFilter(
+                'shortcodes',
+                [$this->shortcodes, 'processShortcodes']
+            )
+        );
     }
 
     /**

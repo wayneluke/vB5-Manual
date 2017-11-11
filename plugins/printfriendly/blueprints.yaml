@@ -1,0 +1,370 @@
+name: Print Friendly
+version: 0.5.0
+description: Create a web page formatted for printing.
+icon: print
+author:
+  name: Severo Iuliano
+  email: severoiuliano@gmail.com
+  url: http://iusvar.alwaysdata.net/grav/
+homepage: https://github.com/iusvar/grav-plugin-printfriendly
+demo: http://iusvar.alwaysdata.net/grav/
+keywords: grav, plugin, printfriendly
+bugs: https://github.com/iusvar/grav-plugin-printfriendly/issues
+readme: https://github.com/iusvar/grav-plugin-printfriendly/blob/master/README.md
+license: MIT
+
+form:
+  validation: strict
+
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      class: subtle
+
+      fields:
+
+        basics:
+          type: tab
+          title: PLUGIN_PF.BASICS.TITLE
+
+          fields:
+
+            enabled:
+              type: toggle
+              label: PLUGIN_ADMIN.PLUGIN_STATUS
+              highlight: 1
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            built_in_css:
+              type: toggle
+              label: PLUGIN_PF.BASICS.USE_BUILT_IN_CSS
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+
+            basics.button:
+              type: section
+              title: Button
+              underline: false
+
+            basics.button.spacer:
+              type: spacer
+              text: PLUGIN_PF.BASICS.BUTTON_NOTE
+              
+            basics.btn_plugin:
+              type: text
+              label: PLUGIN_PF.BASICS.BTN_PLUGIN
+              size: small
+              placeholder: "eg. PrintFriendly"
+
+            basics.icn_plugin:
+              type: text
+              label: PLUGIN_PF.BASICS.ICN_PLUGIN
+              size: small
+              placeholder: "eg. fa-print"
+
+            dialog:
+              type: section
+              title: Dialog mode
+              underline: false
+
+            basics.print_directly:
+              type: toggle
+              label: PLUGIN_PF.BASICS.PRINT_DIRECTLY
+              help: PLUGIN_PF.BASICS.PRINT_DIRECTLY_HELP
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+
+        libraries:
+          type: tab
+          title: PLUGIN_PF.LIBRARIES.TITLE
+
+          fields:
+
+            libraries.jqueryui:
+              type: section
+              title: PLUGIN_PF.LIBRARIES.JQUERYUI_TITLE
+              underline: false
+
+            libraries.jqueryui_source:
+              type: select
+              label: PLUGIN_PF.LIBRARIES.JQUERYUI_SOURCE
+              help: PLUGIN_PF.LIBRARIES.JQUERYUI_SOURCE_HELP
+              size: small
+              default: maxcdn
+              options:
+                maxcdn: PLUGIN_PF.LIBRARIES.JQUERYUI_MAXCDN
+                ownserver: PLUGIN_PF.LIBRARIES.JQUERYUI_OWNSERVER
+
+            libraries.jqueryui_version:
+              type: text
+              size: small
+              label: PLUGIN_PF.LIBRARIES.JQUERYUI_VERSION
+              help: PLUGIN_PF.LIBRARIES.JQUERYUI_VERSION_HELP
+              default: '1.12.1'
+              validate:
+                type: string
+              placeholder: '1.12.1'
+
+            libraries.jqueryui_themes:
+              type: select
+              label: PLUGIN_PF.LIBRARIES.JQUERYUI_THEMES
+              help: PLUGIN_PF.LIBRARIES.JQUERYUI_THEMES_HELP
+              size: small
+              default: start
+              options:
+                base: Base
+                black-tie: Black Tie
+                blitzer: Blitzer
+                cupertino: Cupertino
+                dark-hive: Dark Hive
+                dot-luv: Dot Luv
+                eggplant: Eggplant
+                excite-bike: Excite Bike
+                flick: Flick
+                hot-sneaks: Hot Sneaks
+                humanity: Humanity
+                le-frog: Le Frog
+                mint-choc: Mint Choc
+                overcast: Overcast
+                pepper-grinder: Pepper Grinder
+                redmond: Redmond
+                smoothness: Smoothness
+                south-street: South Street
+                start: Start
+                sunny: Sunny
+                swanky-purse: Swanky Purse
+                trontastic: Trontastic
+                ui-darkness: UI Darkness
+                ui-lightness: UI Lightness
+                vader: Vader
+
+            libraries.awesome:
+              type: section
+              title: PLUGIN_PF.LIBRARIES.AWESOME_TITLE
+              underline: false
+
+            libraries.awesome.spacer:
+              type: spacer
+              text: PLUGIN_PF.LIBRARIES.AWESOME_NOTE
+
+            libraries.awesome_use_font:
+              type: toggle
+              label: PLUGIN_PF.LIBRARIES.AWESOME_USE_FONT
+              help: PLUGIN_PF.LIBRARIES.AWESOME_USE_FONT_HELP
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+        settings:
+          type: tab
+          title: PLUGIN_PF.SETTINGS.TITLE
+
+          fields:
+
+            settings.page:
+              type: section
+              title: PLUGIN_PF.SETTINGS.SECTION_TITLE
+              underline: false
+
+            settings.page.image:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.PAGE_IMAGE
+              help: PLUGIN_PF.SETTINGS.PAGE_IMAGE_HELP
+              highlight: 1
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.page.title:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.PAGE_TITLE
+              highlight: 1
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.page.author:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.PAGE_AUTHOR
+              highlight: 1
+              default: 1
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.page.date:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.PAGE_DATE
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.page.date_format:
+              type: select
+              label: PLUGIN_PF.SETTINGS.DATE_FORMAT
+              size: small
+              default: short
+              options:
+                short: PLUGIN_PF.SETTINGS.SHORT
+                long: PLUGIN_PF.SETTINGS.LONG
+
+            settings.page.tags:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.PAGE_TAGS
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.breadcrumbs:
+              type: section
+              title: PLUGIN_PF.SETTINGS.BREADCRUMBS
+              underline: false
+              
+            settings.breadcrumbs.enabled:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.BREADCRUMBS_STATUS
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.breadcrumbs.link:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.BREADCRUMBS_LINK
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+            settings.breadcrumbs.current:
+              type: toggle
+              label: PLUGIN_PF.SETTINGS.BREADCRUMBS_CURRENT
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.ENABLED
+                0: PLUGIN_ADMIN.DISABLED
+              validate:
+                type: bool
+
+        tags:
+          type: tab
+          title: PLUGIN_PF.TAGS.TITLE
+
+          fields:
+
+            tags.allowed_tags:
+              type: array
+              label: PLUGIN_PF.TAGS.ALLOWABLE_TAGS
+              size: large
+              help: PLUGIN_PF.TAGS.ALLOWABLE_TAGS_HELP
+              default: ['a','b','blockquote','br','center','cite','code','div','em','h1','h2','h3','h4','h5','h6','hr','i','li','ol','p','pre','small','span','strong','sub','sup','table','tbody','td','textarea','tfoot','th','thead','tr','u','ul']
+              value_only: true
+              placeholder_value: "e.g. tag without <>"
+
+        window:
+          type: tab
+          title: PLUGIN_PF.WINDOW.TITLE
+
+          fields:
+            window.width:
+              type: text
+              size: x-small
+              append: %
+              label: PLUGIN_PF.WINDOW.WIDTH
+              help: PLUGIN_PF.WINDOW.WIDTH_HELP
+              default: 50
+              validate:
+                type: number
+              placeholder: PLUGIN_PF.WINDOW.NUMBER
+
+            window.height:
+              type: text
+              size: x-small
+              append: %
+              label: PLUGIN_PF.WINDOW.HEIGHT
+              help: PLUGIN_PF.WINDOW.HEIGHT_HELP
+              default: 40
+              validate:
+                type: number
+              placeholder: PLUGIN_PF.WINDOW.NUMBER
+
+            window.closeonescape:
+              type: toggle
+              label: PLUGIN_PF.WINDOW.CLOSEONESCAPE
+              help: PLUGIN_PF.WINDOW.CLOSEONESCAPE_HELP
+              highlight: 1
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+
+            window.close_icon:
+              type: toggle
+              label: PLUGIN_PF.WINDOW.CLOSE_ICON
+              highlight: 0
+              default: 0
+              options:
+                1: PLUGIN_ADMIN.YES
+                0: PLUGIN_ADMIN.NO
+              validate:
+                type: bool
+
+            window.confirm_button:
+              type: text
+              size: small
+              label: PLUGIN_PF.WINDOW.CONFIRM_BUTTON
+              default: ''
+              validate:
+                type: string
+              placeholder: 'eg. Print'
+
+            window.cancel_button:
+              type: text
+              size: small
+              label: PLUGIN_PF.WINDOW.CANCEL_BUTTON
+              default: ''
+              validate:
+                type: string
+              placeholder: 'eg. Close'

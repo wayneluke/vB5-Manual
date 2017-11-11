@@ -1,3 +1,49 @@
+# v2.6.0
+## 04/25/2017
+
+1. [](#new)
+    * Added ability to define a custom shortcode path for you own shortcodes [#36](https://github.com/getgrav/grav-plugin-shortcode-core/issues/36)
+    * Added a twig filter to allow you to use shortcodes directly in Twig templates [#33](https://github.com/getgrav/grav-plugin-shortcode-core/pull/33)
+
+# v2.5.4
+## 02/26/2017
+
+1. [](#bugfix)
+    * Fixed issue with modular Shortcode meta was not getting processed properly (Assets, Sections, etc.)
+
+# v2.5.3
+## 02/21/2017
+
+1. [](#improved)
+    * Added a reference to current Page in `ShortcodeManager`
+
+# v2.5.2
+## 01/26/2017
+
+1. [](#bugfix)
+    * Fixed Mozilla column css prefix
+
+# v2.5.1
+## 01/25/2017
+
+1. [](#improved)
+    * Added `moz-` prefix in column shortcode
+
+# v2.5.0
+## 01/25/2017
+
+1. [](#new)
+    * Added **new** `columns` shortcode for CSS columns support
+    
+# v2.4.0
+## 01/17/2017
+
+1. [](#improved)
+    * Switched to `Regex` parser by default (previous was Regex)
+    * Update to latest Shortcode library v0.6.5
+1. [](#bugfix)
+    * Removed `getParameterAt(0)` hack in favor of `getBbbCode()` that works with Regex parser
+
 # v2.3.2
 ## 12/15/2016
 
