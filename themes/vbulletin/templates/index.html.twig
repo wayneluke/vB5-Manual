@@ -1,0 +1,62 @@
+{% extends 'partials/base.html.twig' %}
+
+{% macro iloop(page, parent_loop) %}
+    {% if parent_loop|length > 0 %}
+        {% set data_level = parent_loop %}
+    {% else %}
+        {% set data_level = 0 %}
+    {% endif %}
+    {% for p in page.children.visible %}
+        {% set parent_page = p.activeChild ? ' parent' : '' %}
+        {% set current_page = p.active ? ' active' : '' %}
+        <li class="dd-item{{ parent_page }}{{ current_page }}" data-nav-id="{{ p.route }}">
+            <a href="{{ p.url }}" {% if p.header.class %}class="{{ p.header.class }}"{% endif %}>
+              	<span><b>{% if data_level == 0 %}{{ loop.index }}. {% endif %}</b>{{ p.menu }}</span>
+            </a>
+            {% if p.children.count > 0 %}
+            <ul>
+                {{ _self.iloop(p, intval(parent_loop)+loop.index) }}
+            </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+{% endmacro %}
+
+{% macro iversion(p) %}
+    {% set parent_page = p.activeChild ? ' parent' : '' %}
+    {% set current_page = p.active ? ' active' : '' %}
+    <h5 class="{{ parent_page }}{{ current_page }}">
+        {% if p.activeChild or p.active %}
+        <i class="fa fa-chevron-down fa-fw"></i>
+        {% else %}
+        <i class="fa fa-plus fa-fw"></i>
+        {% endif %}
+        <a href="{{ p.url }}">{{ p.menu }}</a>
+    </h5>
+{% endmacro %}
+
+{% block content %}
+<div>
+    <div>
+				{{ page.content }}
+        {% if theme_config.top_level_version %}
+            {% for slug, ver in pages.children %}
+                {{ _self.iversion(ver) }}
+                <ul id="{{ slug }}" class="topics">
+                {{ _self.iloop(ver, '') }}
+                </ul>
+            {% endfor %}
+        {% else %}
+            <ul class="topics">
+                {% if theme_config.root_page %}
+                    {{ _self.iloop(page.find(theme_config.root_page), '') }}
+                {% else %}
+            {{ _self.iloop(pages, '') }}
+                {% endif %}
+            </ul>
+        {% endif %}
+    </div>
+</div>
+
+
+{% endblock %}

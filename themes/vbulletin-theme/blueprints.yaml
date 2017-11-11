@@ -1,0 +1,15 @@
+name: Vbulletin Theme
+version: 0.1.0
+description: vBulletin Manual
+icon: rebel
+author:
+  name: Wayne
+  email: wayne.luke@vbulletin.com
+homepage: https://github.com/wayne/grav-theme-vbulletin-theme
+demo: http://demo.yoursite.com
+keywords: grav, theme, etc
+bugs: https://github.com/wayne/grav-theme-vbulletin-theme/issues
+readme: https://github.com/wayne/grav-theme-vbulletin-theme/blob/develop/README.md
+license: MIT
+top_level_version: true
+

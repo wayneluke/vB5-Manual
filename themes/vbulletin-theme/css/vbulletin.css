@@ -1,0 +1,85 @@
+dt {font-weight:bold;}
+
+.nav-prev, .nav-next {display:none;}
+
+#chapter p {
+    text-align: justify;
+}
+
+.sc-notice {
+    clear: right;
+}
+
+.sc-notice.nocloud > div:before, .sc-notice.cloudonly > div:before {
+     position: absolute;
+     top: 2px;
+     color: #fff;
+     font-family: FontAwesome;
+     content: '\f0c2';
+     left: 10px;
+}
+
+.sc-notice.nocloud > div:first-child {
+    border-top: 30px solid #DF6F6C;
+    background: #FAE2E2;
+}
+
+.sc-notice.nocloud > div:first-child:after {
+    content: ' Cloud Restricted';
+}
+
+.sc-notice.cloudonly > div:first-child {
+    border-top: 30px solid #77C577;
+    background: #E6F9E6;
+}
+
+.sc-notice.cloudonly > div:first-child:after {
+    content: ' Cloud Feature';
+}
+
+.sc-notice.debug > div:before {
+     position: absolute;
+     top: 2px;
+     color: #fff;
+     font-family: FontAwesome;
+     content: '\f188';
+     left: 10px;
+}
+
+.sc-notice.debug > div:first-child {
+    border-top: 30px solid #DF6F6C;
+    background: #FAE2E2;
+}
+
+.sc-notice.debug > div:first-child:after {
+    content: ' Debug Mode Only';
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.gallery figure {
+  text-align: center;
+}
+
+.gallery img {
+    width: 250px;
+    height: 206px;
+    padding: 8px;
+    margin: 0px !important;
+}
+
+
+.gallery figcaption {
+  width: 250px;
+  text-align: left;
+  margin: 0 auto;
+  padding-left: 8px;
+}
+
+.index {
+        column-count: 3;
+}

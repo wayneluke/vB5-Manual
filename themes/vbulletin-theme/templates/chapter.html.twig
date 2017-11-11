@@ -1,0 +1,18 @@
+{% extends 'docs.html.twig' %}
+
+{% block content %}
+	<div id="chapter">
+    	<div id="body-inner">
+			<div>
+				{{ page.content }}
+				<hr>
+				<p>Articles in this chapter:</p>
+				<ul>
+				{% for child in page.collection %}
+    				<li><a href="{{ child.url }}">{{ child.title }}</a></li>
+				{% endfor %}
+				<ul>
+			</div>
+		</div>
+    </div>
+{% endblock %}
