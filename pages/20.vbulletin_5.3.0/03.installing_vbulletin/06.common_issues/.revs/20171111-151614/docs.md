@@ -11,15 +11,12 @@ taxonomy:
         - installation
 slug: common_issues
 template: docs
-twig_first: true
-process:
-    twig: true
 ---
 
 A list of common issues that people have while installing the software.
 
 #### I get an error saying that my PHP version is too low
-You will need to upgrade your PHP to the minimum required version or higher. If you do not manage your own server, you can ask your server administrator or hosting provider to do this for you. Sometimes, the hosting provider will support multiple versions of PHP. We recommend using the latest version available. If they say that you're using a version higher than PHP {{ site.vbulletin.php_version }}, then ask them if you need to "add a handler for that version". Follow their instructions.
+You will need to upgrade your PHP to the minimum required version or higher. If you do not manage your own server, you can ask your server administrator or hosting provider to do this for you. Sometimes, the hosting provider will support multiple versions of PHP. We recommend using the latest version available. If they say that you're using a version higher than PHP 5.6.0, then ask them if you need to "add a handler for that version". Follow their instructions.
 
 
 #### I installed vBulletin but there is no formatting

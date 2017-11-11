@@ -23,7 +23,6 @@ Your server must meet the following requirements before vBulletin can be install
 vBulletin is a web-based application and as such has a few minimum requirements. To run vBulletin, you need a web hosting provider that includes the following on their systems:
 - PHP version: {{ site.vbulletin.php_version }}
 - MySQL version: {{ site.vbulletin.mysql_version }}
-    - As an alternative to MySQL, you can use MariaDB version: {{ site.vbulletin.mariadb_version }}
 - A pre-registered domain name
 - 200 Megabytes of hard drive space
 - Rewrite Engine – A rewrite engine is needed for vBulletin's Friendly URL routing to work. Popular rewrite engines include mod_rewrite on Apache 2.4+ and "URL Rewrite" for IIS 7+.
