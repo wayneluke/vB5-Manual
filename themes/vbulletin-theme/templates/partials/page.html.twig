@@ -4,6 +4,6 @@
 	{{ printfriendly(page.route) }} - Reading Time: {{ page.content|readingtime }} 
 	{{ page.content }}
 
-	Last Modified: {{ page.header.date }}
+	Last Modified: {{ page.modified()|date("m/d/Y") }}
 </div>
 </div>

@@ -1,0 +1,2 @@
+{% set payload = {frontmatter: page.header, content: page.content}  %}
+{{ payload|json_encode|raw }}
