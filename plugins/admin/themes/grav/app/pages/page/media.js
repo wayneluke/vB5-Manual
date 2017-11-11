@@ -3,7 +3,6 @@ import request from '../../utils/request';
 import FilesField, { UriToMarkdown } from '../../forms/fields/files';
 import { config, translations } from 'grav-config';
 import { Instance as Editor } from '../../forms/fields/editor';
-import Sortable from 'sortablejs';
 
 const previewTemplate = `
     <div class="dz-preview dz-file-preview">
@@ -43,34 +42,6 @@ export default class PageMedia extends FilesField {
         if (typeof this.options.attachDragDrop === 'undefined' || this.options.attachDragDrop) {
             this.attachDragDrop();
         }
-
-        const field = $(`[name="${this.container.data('dropzone-field')}"]`);
-
-        if (field.length) {
-            this.sortable = new Sortable(this.container.get(0), {
-                animation: 150,
-                // forceFallback: true,
-                setData: (dataTransfer, target) => {
-                    target = $(target);
-                    let uri = encodeURI(target.find('.dz-filename').text());
-                    let shortcode = UriToMarkdown(uri);
-                    this.dropzone.disable();
-                    target.addClass('hide-backface');
-                    dataTransfer.effectAllowed = 'copy';
-                    dataTransfer.setData('text', shortcode);
-                },
-                onSort: () => {
-                    let names = [];
-                    this.container.find('[data-dz-name]').each((index, file) => {
-                        file = $(file);
-                        const name = file.text().trim();
-                        names.push(name);
-                    });
-
-                    field.val(names.join(','));
-                }
-            });
-        }
     }
 
     fetchMedia() {
@@ -105,15 +76,9 @@ export default class PageMedia extends FilesField {
 
     onDropzoneComplete(file) {
         super.onDropzoneComplete(file);
-        this.sortable.options.onSort();
 
         // accepted
         $('.dz-preview').prop('draggable', 'true');
-    }
-
-    onDropzoneRemovedFile(file, ...extra) {
-        super.onDropzoneRemovedFile(file, ...extra);
-        this.sortable.options.onSort();
     }
 
     attachDragDrop() {
