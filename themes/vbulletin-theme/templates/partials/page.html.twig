@@ -5,5 +5,6 @@
 	{{ page.content }}
 
 	Last Modified: {{ page.modified()|date("m/d/Y") }}
+	{% include 'partials/comments.html.twig' with {'page': page} %}
 </div>
 </div>
