@@ -15,7 +15,7 @@ template: article
 ![Image 2](instr_android_002.png?lightbox=1024&cropResize=200,200){.right}
 ![Image 3](instr_android_004.png?lightbox=1024&cropResize=200,200){.right}
 ![Image 4](instr_android_003.png?lightbox=1024&cropResize=200,200){.right}
-
+<div class="steps">
 1.   Go to [https://play.google.com/apps/publish](https://play.google.com/apps/publish) and sign in with your Google Account. You can use a Google Account you already own, or create a new Google Account at [https://mail.google.com/mail/signup](https://mail.google.com/mail/signup) 
 1.   The next page will let you know that you will need to pay a one-time registration fee of $25 via Google Checkout. Enter payment details and Click the "Continue" button. 
 1.   Check off the box "I agree and I am willing to associate my account...", then click continue to payment. 
@@ -24,3 +24,4 @@ template: article
 1.   In the "Phone Number" field, enter a valid phone number
 1.   If you would like to receive e-mail updates from Google regarding Google Play Developer, then check the appropriate box. Click the "Complete registration" button.
 1.   You will receive an e-mail receipt from Google and your account will be processed.
+</div>

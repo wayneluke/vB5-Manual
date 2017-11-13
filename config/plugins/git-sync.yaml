@@ -1,0 +1,19 @@
+enabled: true
+text_var: 'Custom Text added by the **Git Sync** plugin (disable plugin to remove)'
+folders:
+  - pages
+  - themes
+user: wayneluke
+password: gitsync-def502000a53faa458cc686bcef53c1c57145be25660aec767e66f6beb5a12fa5279008379f7fe4dfd97a5557c39f2795d80c1282ea2f1af452cad4928a8af5594e49e113ffee2bca65abdd9d7b92ae90b53b2301bdcad712209df30d3f1bd
+webhook: /_git-sync
+branch: master
+remote:
+  name: origin
+  branch: master
+git:
+  author: gituser
+  name: GitSync
+  email: git-sync@trilby.media
+  bin: 'C:\cmder\vendor\git-for-windows\bin\git.exe'
+logging: true
+repository: 'https://github.com/wayneluke/vB5-Manual'

@@ -1,0 +1,67 @@
+enabled: true
+built_in_css: true
+basics:
+  print_directly: false
+libraries:
+  jqueryui_source: maxcdn
+  jqueryui_version: 1.12.1
+  jqueryui_themes: start
+  awesome_use_font: false
+settings:
+  page:
+    image: true
+    title: true
+    author: true
+    date: true
+    date_format: short
+    tags: true
+  breadcrumbs:
+    enabled: true
+    link: true
+    current: true
+tags:
+  allowed_tags:
+    - a
+    - b
+    - blockquote
+    - br
+    - center
+    - cite
+    - code
+    - div
+    - em
+    - h1
+    - h2
+    - h3
+    - h4
+    - h5
+    - h6
+    - hr
+    - i
+    - img
+    - li
+    - ol
+    - p
+    - pre
+    - small
+    - span
+    - strong
+    - sub
+    - sup
+    - table
+    - tbody
+    - td
+    - textarea
+    - tfoot
+    - th
+    - thead
+    - tr
+    - u
+    - ul
+window:
+  width: 50
+  height: 40
+  closeonescape: false
+  close_icon: false
+  confirm_button: Print
+  cancel_button: Close

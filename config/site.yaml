@@ -1,0 +1,20 @@
+title: 'vBulletin Manual'
+default_lang: en
+author:
+  name: 'Wayne Luke'
+  email: wayne.luke@vbulletin.com
+taxonomies:
+  - category
+  - tag
+  - author
+metadata:
+  description: 'Online manual and tutorials for vBulletin 5 Connect.'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+vbulletin:
+  php_version: '5.6.0+'
+  mysql_version: '5.5.0+'
+  mariadb_version: '10+'

@@ -1,9 +1,40 @@
 dt {font-weight:bold;}
 
+.right {
+    display:inline-block !important;
+    margin: .5rem 0 !important;
+    clear:right;
+    float:right;
+}
+
 .nav-prev, .nav-next {display:none;}
 
 #chapter p {
     text-align: justify;
+}
+
+ol {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+
+ol > li {
+    counter-increment: step-counter;
+    vertical-align: text-top;
+    margin-bottom: 10px;
+    margin-right:25px;
+}
+
+ol > li::before {
+    content: counter(step-counter);
+    margin-right: 15px;
+    font-size: 90%;
+    background-color: rgb(200,200,200);
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
 }
 
 .sc-notice {

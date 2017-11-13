@@ -11,11 +11,10 @@ visible: true
 template: article
 ---
 
-![Image 1](instr_android_001.png?lightbox=1024&cropResize=200,200){.right}
-![Image 2](instr_android_002.png?lightbox=1024&cropResize=200,200){.right}
-![Image 3](instr_android_004.png?lightbox=1024&cropResize=200,200){.right}
-![Image 4](instr_android_003.png?lightbox=1024&cropResize=200,200){.right}
-
+![Image 1](instr_android_001.png?lightbox=1024&cropResize=200,200) {img.right}
+![Image 2](instr_android_002.png?lightbox=1024&cropResize=200,200) {img.right}
+![Image 3](instr_android_004.png?lightbox=1024&cropResize=200,200) {img.right}
+![Image 4](instr_android_003.png?lightbox=1024&cropResize=200,200) {img.right}
 1.   Go to [https://play.google.com/apps/publish](https://play.google.com/apps/publish) and sign in with your Google Account. You can use a Google Account you already own, or create a new Google Account at [https://mail.google.com/mail/signup](https://mail.google.com/mail/signup) 
 1.   The next page will let you know that you will need to pay a one-time registration fee of $25 via Google Checkout. Enter payment details and Click the "Continue" button. 
 1.   Check off the box "I agree and I am willing to associate my account...", then click continue to payment. 
