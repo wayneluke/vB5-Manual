@@ -1,7 +1,6 @@
 <?php
 
-$template="
----
+$template="---
 title: %title%
 slug: %title_slug%
 taxonomy:
@@ -13,6 +12,7 @@ taxonomy:
 visible: true
 template: article
 version: %version%
+visible: false
 date: %date%
 ---
 

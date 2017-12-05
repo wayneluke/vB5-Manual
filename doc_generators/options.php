@@ -59,7 +59,7 @@ while ($group = $groups->fetch_array()) {
     if ($group[1]) {
         echo "Creating page for \"" .$group[5].".\n\r";
         
-        $now=date('Y-m-d h:i:s');
+        $now=date('n/d/Y h:ia');
         $content="";
 
         $settings=get_data($connection,$queries['settings'],[$group[0]]);
