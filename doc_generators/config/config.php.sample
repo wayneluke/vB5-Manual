@@ -1,0 +1,12 @@
+<?php
+
+/* 
+ * Rename this file to config.php. 
+ * Update the values below to reference your Database
+ */
+
+// Database Settings
+$dbHost='localhost';
+$dbUser='user';
+$dbPass='password';
+$dbDatabase='vbulletin';
