@@ -2,4 +2,6 @@
     - Added Changelog.
     - Added pages/images directory
     - installed cache plugin
-- 
+- December 5, 2017
+    - Added Document Generator for Options Pages.
+    - Recreated new options pages.

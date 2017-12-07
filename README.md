@@ -35,7 +35,7 @@ The vB5 Manual is broken up into different Books, Chapters, and Articles. Each B
 
 > Note: Make sure that your webserver can write the the `%webroot%/vbulletin/manual/cache` and `%webroot%/vbulletinmanual/users/data` directories.
 
-## Common Commands
+### Common GRAV CLI Commands
 Grav comes with command line scripts to manage the maintenance and update of its packages. Some of the common ones for this implementation are:
 
 Upgrade Grav: php bin/gpm selfupdate
@@ -44,8 +44,10 @@ Precache: php bin/plugin precache url /
 
 If you don't have access to the command line, these commands can be run from within the Admin Panel provided by Grav as well.
 
-
-
-## Using the Admin Panel.
+### Using the Admin Panel.
 The Skeleton used provides and Admin Panel to manage the site. You can access this by going to %webroot%/vbulletin/manual/admin. On the first access, you will be required to create an Administrator user account. Using the Admin Panel is beyond the scope of this project. You can learn more on the [Grav Documentation](https://learn.getgrav.org/admin-panel) site.
 
+## Document Generators
+The document generators are a series of command line PHP scripts that will automatically create GRAV pages based on information stored in the vBulletin database. This combines a series of queries to retrieve inline help, augmented documentation stored in the database and templates to build Grav Articles. The goal is to be able to frequently update these pages as needed with new version releases.
+
+See the readme.md in the doc_generators folder for more information.
