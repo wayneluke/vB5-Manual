@@ -22,7 +22,6 @@ function delete_directory($dirname) {
 
 function create_directory($dirname) {
     if (!file_exists($dirname)) {
-        echo ("Creating $dirname...\n\r");
         mkdir($dirname, 0777, true);
     }
 }

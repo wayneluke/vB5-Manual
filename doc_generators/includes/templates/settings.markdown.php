@@ -1,21 +1,33 @@
 <?php
 
 $template="---
-title: %title%
-slug: %title_slug%
+title: ~title~
+slug: ~title_slug~
 taxonomy:
     category:
         - settings
     tag:
         - options
-        - %group%
-visible: true
-template: article
-version: %version%
+        - ~group~
 visible: false
-date: %date%
+template: article
+version: ~version~
+date: ~date~
 ---
 
-%content%
+~content~
 
 ";
+
+$contentItem="<section class='option'>
+~image~
+~title~
+~description~
+~help~
+~additionalinfo~
+
+- ~type~
+- ~defaultvalue~
+</section>";
+
+$contentImage="![~caption~](~imageurl~){.option_image}";
