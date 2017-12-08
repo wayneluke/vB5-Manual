@@ -5,3 +5,11 @@
 - December 5, 2017
     - Added Document Generator for Options Pages.
     - Recreated new options pages.
+- December 6, 2017
+    - Added readme.md for the Document Generator sub-project.
+    - Split the original generator into multiple files for modularity. 
+    - Created basic database class for reuse purposes.
+    - Created basic templating class for reuse purposes.
+    - Split directory and slugify functions into a separate functions.php file.
+- December 7, 2017
+    - Started document generator for the Style Variable groups.
