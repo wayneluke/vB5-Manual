@@ -13,3 +13,10 @@
     - Split directory and slugify functions into a separate functions.php file.
 - December 7, 2017
     - Started document generator for the Style Variable groups.
+- December 8, 2017
+    - New weekly push of content. 
+    - Simplified the CMS configuration for performance and security.
+        - Removed Grav Admin and related modules.
+        - Removed TNTSearch, couldn't get it to work and will revisit.
+        - Removed Learn2 with Gitsync and dependent plugins.
+    - Started migrating API documentation from staff wiki to markdown for inclusion.        
