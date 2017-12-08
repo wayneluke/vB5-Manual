@@ -4,6 +4,8 @@ A vBulletin Documentation project using the [Grav](https://getgrav.com) flat-fil
 
 This is an ongoing grassroots and free project to update and expand the current vBulletin 5 manual. To report any issues, please use the Issues link on the Github project.
 
+![](screenshot.png)
+
 ## About the Project
 The current vBulletin Manual was built many years ago and has not been updated with new and necessary functionality. It also has a difficult interface to update manuals. Using the Grav system, we can build documentation with a similar hierarchy but include new modern functionality with ease. The Grav CMS is a flatfile CMS without the need for a database. Grav has its own template and caching systems to allow fast rendering of pages. It is also extendible through plugins. 
 
