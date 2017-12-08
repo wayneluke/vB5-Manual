@@ -28,7 +28,7 @@ The vB5 Manual is broken up into different Books, Chapters, and Articles. Each B
 
 ## New Installation
 1. Start by creating a directory to hold your copy of the documentation project. This must be in a web accessible directory. I use one called /manual/ within the a vbulletin virtual host. So on my server, the path would be %webroot%/vbulletin/manual. I will use this path in all examples below. In my local browser, I access it via the address http://%webroote%/vbulletin/manual. If you do not have a development server configured for your OS, you will need to do so in order to use this package. If you're using Windows, I recommend WAMPServer.
-1. Download the [Learn2 with Github Skeleton](https://github.com/hibbitts-design/grav-skeleton-learn2-with-git-sync) for the Grav CMS. 
+1. Download the [RTFM Site Skeleton](https://github.com/getgrav/grav-skeleton-rtfm-site) for the Grav CMS. 
 1. Upzip the skeleton package within the directory you created.
 1. Rename user/pages within the Skeleton to /user/pages.bak
 1. Download the master version of this project and unzip it.
