@@ -1,6 +1,6 @@
 # vB5-Manual
 
-*This documentant is targeted towards people who want to recreat the documentation on their own server. If you only wish to report an spelling issue, grammer issue, missing article, or make a suggestion then please click on the [Issues](https://github.com/wayneluke/vB5-Manual/issues) tab above to do so.*
+*This document is targeted towards people who want to recreate the vBulletin 5 documentation on their own server. If you only wish to report an spelling issue, grammer issue, missing article, or make a suggestion then please click on the [Issues](https://github.com/wayneluke/vB5-Manual/issues) tab above to do so.*
 
 ![](screenshot.png)
 
