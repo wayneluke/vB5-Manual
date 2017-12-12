@@ -39,10 +39,9 @@ The vB5 Manual is broken up into different Books, Chapters, and Articles. Each B
 
 ### Common GRAV CLI Commands
 Grav comes with command line scripts to manage the maintenance and update of its packages. Some of the common ones for this implementation are:
-
-Upgrade Grav: php bin/gpm selfupdate
-Upgrade Plugins: php bin/gpm upgrade
-Precache: php bin/plugin precache url /
+- Update GRAV: `>php bin/gpm selfupdate`
+- Update installed plugins and themes: `>php bin/gpm upgrade`
+- Rebuild the precache of the site: `>php bin/plugin precache url /`
 
 If you don't have access to the command line, these commands can be run from within the Admin Panel provided by Grav as well.
 
