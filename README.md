@@ -35,7 +35,7 @@ The vB5 Manual is broken up into different Books, Chapters, and Articles. Each B
 1. Overwrite the files within the Skeleton.
 1. Navigate to the site in your web browser.
 
-> Note: Make sure that your webserver can write the the `%webroot%/vbulletin/manual/cache` and `%webroot%/vbulletinmanual/users/data` directories.
+> Note: Make sure that your webserver can write to the `%webroot%/vbulletin/manual/cache` and `%webroot%/vbulletinmanual/users/data` directories.
 
 ### Common GRAV CLI Commands
 Grav comes with command line scripts to manage the maintenance and update of its packages. Some of the common ones for this implementation are:
