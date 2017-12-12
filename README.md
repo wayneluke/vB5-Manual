@@ -27,7 +27,7 @@ The vB5 Manual is broken up into different Books, Chapters, and Articles. Each B
 
 
 ## New Installation
-1. Start by creating a directory to hold your copy of the documentation project. This must be in a web accessible directory. I use one called /manual/ within the a vbulletin virtual host. So on my server, the path would be %webroot%/vbulletin/manual. I will use this path in all examples below. In my local browser, I access it via the address http://%webroote%/vbulletin/manual. If you do not have a development server configured for your OS, you will need to do so in order to use this package. If you're using Windows, I recommend WAMPServer.
+1. Start by creating a directory to hold your copy of the documentation project. This must be in a web accessible directory. I use one called /manual/ within the a vbulletin virtual host. So on my server, the path would be `%webroot%/vbulletin/manual`. I will use this path in all examples below. In my local browser, I access it via the address `http://%webroote%/vbulletin/manual`. If you do not have a development server configured for your OS, you will need to do so in order to use this package. If you're using Windows, I recommend [WAMPServer](http://www.wampserver.com/en/).
 1. Download the [RTFM Site Skeleton](https://github.com/getgrav/grav-skeleton-rtfm-site) for the Grav CMS. 
 1. Upzip the skeleton package within the directory you created.
 1. Rename user/pages within the Skeleton to /user/pages.bak
@@ -42,11 +42,6 @@ Grav comes with command line scripts to manage the maintenance and update of its
 - Update GRAV: `>php bin/gpm selfupdate`
 - Update installed plugins and themes: `>php bin/gpm upgrade`
 - Rebuild the precache of the site: `>php bin/plugin precache url /`
-
-If you don't have access to the command line, these commands can be run from within the Admin Panel provided by Grav as well.
-
-### Using the Admin Panel.
-The Skeleton used provides and Admin Panel to manage the site. You can access this by going to %webroot%/vbulletin/manual/admin. On the first access, you will be required to create an Administrator user account. Using the Admin Panel is beyond the scope of this project. You can learn more on the [Grav Documentation](https://learn.getgrav.org/admin-panel) site.
 
 ## Document Generators
 The document generators are a series of command line PHP scripts that will automatically create GRAV pages based on information stored in the vBulletin database. This combines a series of queries to retrieve inline help, augmented documentation stored in the database and templates to build Grav Articles. The goal is to be able to frequently update these pages as needed with new version releases.
