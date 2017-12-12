@@ -2,13 +2,11 @@
 
 *This documentant is targeted towards people who want to recreat the documentation on their own server. If you only wish to report an spelling issue, grammer issue, missing article, or make a suggestion then please click on the [Issues](https://github.com/wayneluke/vB5-Manual/issues) tab above to do so.*
 
-A vBulletin Documentation project using the [Grav](https://getgrav.com) flat-file CMS. Grav uses a series of markdown files and templates to present its content. Due to this, most pages of the documentation are viewable in this repository. The site can be viewed in its complete form at the [vB5 Support](http://vb5support.com) website.
-
-This is an ongoing grassroots and free project to update and expand the current vBulletin 5 manual. To report any issues, please use the Issues link on the Github project.
-
 ![](screenshot.png)
 
 ## About the Project
+The vBulletin Documentation project using the [Grav](https://getgrav.com) flat-file CMS. Grav uses a series of markdown files and templates to present its content. Due to this, most pages of the documentation are viewable in this repository. The site can be viewed in its complete form at the [vB5 Support](http://vb5support.com) website.
+
 The current vBulletin Manual was built many years ago and has not been updated with new and necessary functionality. It also has a difficult interface to update manuals. Using the Grav system, we can build documentation with a similar hierarchy but include new modern functionality with ease. The Grav CMS is a flatfile CMS without the need for a database. Grav has its own template and caching systems to allow fast rendering of pages. It is also extendible through plugins. 
 
 ### Features Added to the Documentation
