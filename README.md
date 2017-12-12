@@ -23,8 +23,7 @@ The current vBulletin Manual was built many years ago and has not been updated w
 - PDF Download of specific Books.
 
 ## Documentation Structure
-The vB5 Manual is broken up into different Books, Chapters, and Articles. Each Book covers a specific set of functionality within the vBulletin 5 Suite.
-
+The vB5 Manual is broken up into different Books, Chapters, and Articles. Each Book covers a specific set of functionality within the vBulletin 5 Suite and is divided into chapters. Chapters are collections of articles that contain the information about individual functions. 
 
 ## New Installation
 1. Start by creating a directory to hold your copy of the documentation project. This must be in a web accessible directory. I use one called /manual/ within the a vbulletin virtual host. So on my server, the path would be `%webroot%/vbulletin/manual`. I will use this path in all examples below. In my local browser, I access it via the address `http://%webroote%/vbulletin/manual`. If you do not have a development server configured for your OS, you will need to do so in order to use this package. If you're using Windows, I recommend [WAMPServer](http://www.wampserver.com/en/).
