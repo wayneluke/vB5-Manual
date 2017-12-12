@@ -11,7 +11,7 @@
     - Removed Learn2 with Gitsync and dependent plugins.
     - Started migrating API documentation from staff wiki to markdown for inclusion.        
 ### December 7
-    - Started document generator for the Style Variable groups.
+- Started document generator for the Style Variable groups.
 ### December 6
 - Added readme.md for the Document Generator sub-project.
 - Split the original generator into multiple files for modularity. 
