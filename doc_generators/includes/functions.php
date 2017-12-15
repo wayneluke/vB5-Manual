@@ -35,3 +35,7 @@ function slugify($string='')
     $slug=strtolower($string);
     return $slug;
 }
+
+function unslugify($string="") {
+    
+}

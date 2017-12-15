@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<pagetemplates vbversion="5.3.4">
+	<pagetemplate guid="vbulletin-4ecbdac9370e30.09770013">
+		<title>Default Forums Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:5:{s:10:"hide_title";s:1:"1";s:11:"filter_sort";s:11:"sort_recent";s:11:"filter_time";s:8:"time_all";s:11:"filter_show";s:8:"show_all";s:17:"filter_new_topics";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_4-4eb423cfd69899.61732480</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_9-4eb423cfd6a956.90724117</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_statistics-4eb423cfd6dea7.34930879</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:2:{s:5:"title";s:21:"Welcome to vBulletin!";s:4:"html";s:227:"Welcome to your vBulletin forum! You can click "Edit Site" above for site administration options.<br /><br /><p style="font-size:x-small;font-style:italic">To edit or remove this module, click "edit site", then "edit page".</p>";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_1-4eb423cfd68cd8.93414606</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:13:"Latest Topics";s:14:"resultsPerPage";s:1:"3";s:10:"searchJSON";s:125:"{"date":{"from":"30"},"channel":["2"],"sort":{"created":"desc"},"exclude_type":["vBForum_PrivateMessage"],"starter_only":"1"}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:17:"Recent Blog Posts";s:14:"resultsPerPage";s:1:"3";s:10:"searchJSON";s:159:"{"date":{"from":"30"},"sort":{"created":"desc"},"exclude_type":["vBForum_PrivateMessage"],"starter_only":"1","channelguid":"vbulletin-4ecbdf567f3a38.99555305"}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>3</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_13-4eb423cfd6b6b0.89761798</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>4</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_search-trending-4eb423cfd6a5f3.08320765</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371313.62302700">
+		<title>Default Channel Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"0";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:19:"show_at_breakpoints";a:3:{s:7:"desktop";i:1;s:5:"small";i:1;s:6:"xsmall";i:0;}}]]></adminconfig>
+				<widgetguid>vbulletin-widget_channel_description-580aaf0629f7e0.23352381</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_5-4eb423cfd69bf4.53144655</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_7-4eb423cfd6a2a9.88882814</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371313.62302701">
+		<title>Default Category Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_5-4eb423cfd69bf4.53144655</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_7-4eb423cfd6a2a9.88882814</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93716c4.69967191">
+		<title>Default Conversation Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_6-4eb423cfd69f41.95279534</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371ab0.18191024">
+		<title>Advanced Search Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search_criteria-4eb423cfd6aca9.42470675</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371e58.50519390">
+		<title>User registration Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_11-4eb423cfd6b002.64783616</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371e58.50519391">
+		<title>Forgot Password Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_forgot_password-4eb423cfd6dea7.34930847</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371e58.50519392">
+		<title>Contact Us Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-contactus-4eb423cfd6dea7.34930857</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9371e58.50519393">
+		<title>Help Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"0";}]]></adminconfig>
+				<widgetguid>vbulletin-help-4eb423cfd6dea7.34930858</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93721f3.19350821">
+		<title>Who's Online Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_12-4eb423cfd6b362.34901422</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9372590.52063766">
+		<title>User Profile Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-narrow-wide-ef8c99cab374d2.91030972</screenlayoutguid>
+		<screenlayoutsectiondata>
+			<column>
+				<sectionnumber>0</sectionnumber>
+				<sourceorder>0</sourceorder>
+			</column>
+			<column>
+				<sectionnumber>1</sectionnumber>
+				<sourceorder>1</sourceorder>
+			</column>
+		</screenlayoutsectiondata>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_profile_sidebar-4eb423cfd6d811.94687666</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_profile-4eb423cfd6d4b0.24011159</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9372934.46376011">
+		<title>Media Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_media-4eb423cfd6d802.93687555</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9372cd6.23258244">
+		<title>Edit Photos Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_photos-4eb423cfd6c410.69095735</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9373b62.95194677">
+		<title>Settings Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_settings-4eb423cfd6d166.73559252</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac9373f09.61139031">
+		<title>Search Result Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search_results-4eb423cfd6ba10.05943316</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676026">
+		<title>Private Messages Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-narrow-wide-ef8c99cab374d2.91030972</screenlayoutguid>
+		<screenlayoutsectiondata>
+			<column>
+				<sectionnumber>0</sectionnumber>
+				<sourceorder>0</sourceorder>
+			</column>
+			<column>
+				<sectionnumber>1</sectionnumber>
+				<sourceorder>1</sourceorder>
+			</column>
+		</screenlayoutsectiondata>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_privatemessages-4eb423cfd6dea7.34930839</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_privatemessages-4eb423cfd6dea7.34930841</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_privatemessages-4eb423cfd6dea7.34930842</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_privatemessages-4eb423cfd6dea7.34930843</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676027">
+		<title>Subscription Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-narrow-wide-ef8c99cab374d2.91030972</screenlayoutguid>
+		<screenlayoutsectiondata>
+			<column>
+				<sectionnumber>0</sectionnumber>
+				<sourceorder>0</sourceorder>
+			</column>
+			<column>
+				<sectionnumber>1</sectionnumber>
+				<sourceorder>1</sourceorder>
+			</column>
+		</screenlayoutsectiondata>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_profile_sidebar-4eb423cfd6d811.94687666</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_subscription-4eb423cfd6dea7.34930840</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676028">
+		<title>Album Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_album-4eb423cfd6dea7.34930844</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676029">
+		<title>Visitor Message Display Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-narrow-wide-ef8c99cab374d2.91030972</screenlayoutguid>
+		<screenlayoutsectiondata>
+			<column>
+				<sectionnumber>0</sectionnumber>
+				<sourceorder>0</sourceorder>
+			</column>
+			<column>
+				<sectionnumber>1</sectionnumber>
+				<sourceorder>1</sourceorder>
+			</column>
+		</screenlayoutsectiondata>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_profile_sidebar-4eb423cfd6d811.94687666</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_visitormessage-4eb423cfd6dea7.34930846</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676030">
+		<title>Default Blog Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<screenlayoutsectiondata>
+			<column>
+				<sectionnumber>0</sectionnumber>
+				<sourceorder>1</sourceorder>
+			</column>
+			<column>
+				<sectionnumber>1</sectionnumber>
+				<sourceorder>0</sourceorder>
+			</column>
+		</screenlayoutsectiondata>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_blogchanneldisplay-4eb423cfd6dea7.34930853</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_blogsummary-4eb423cfd6dea7.34930852</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<subModules>
+					<widgetinstance>
+						<displayorder>1</displayorder>
+						<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:15:"Latest Comments";s:14:"resultsPerPage";s:1:"6";s:10:"searchJSON";s:76:"{"channel":{"param":"channelid"},"sort":{"created":"desc"},"reply_only":"1"}";}]]></adminconfig>
+						<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+					</widgetinstance>
+					<widgetinstance>
+						<displayorder>3</displayorder>
+						<adminconfig>a:1:{s:5:"title";s:9:"Tag Cloud";}</adminconfig>
+						<widgetguid>vbulletin-widget_13-4eb423cfd6b6b0.89761798</widgetguid>
+					</widgetinstance>
+				</subModules>
+				<widgetguid>vbulletin-widget_container-4eb423cfd6dea7.34930867</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676031">
+		<title>Blogs Main Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_bloghome-4eb423cfd6dea7.34930849</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:8:"My Blogs";s:14:"resultsPerPage";s:1:"5";s:10:"searchJSON";s:61:"{"my_channels":{"type":"blog"},"sort":{"lastcontent":"desc"}}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:20:"Latest Blog Comments";s:14:"resultsPerPage";s:1:"5";s:10:"searchJSON";s:157:"{"date":{"from":"30"},"sort":{"created":"desc"},"exclude_type":["vBForum_PrivateMessage"],"reply_only":"1","channelguid":"vbulletin-4ecbdf567f3a38.99555305"}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676032">
+		<title>Blog Admin</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_blogadmin-4eb423cfd6dea7.34930848</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676034">
+		<title>Create Content Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_newcontent-4eb423cfd6dea7.34930855</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676035">
+		<title>Group Admin</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_sgadmin-4eb423cfd6dea7.34930858</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676037">
+		<title>Groups Home</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:4:{s:10:"hide_title";s:1:"1";s:9:"tab_order";a:2:{s:10:"groups-tab";s:1:"0";s:19:"activity-stream-tab";s:1:"1";}s:11:"default_tab";s:11:"#groups-tab";s:12:"display_tabs";a:2:{i:0;s:20:"#activity-stream-tab";i:1;s:11:"#groups-tab";}}]]></adminconfig>
+				<widgetguid>vbulletin-widget_sghome-4eb423cfd6dea7.34930859</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:9:"My Groups";s:14:"resultsPerPage";s:1:"5";s:10:"searchJSON";s:62:"{"my_channels":{"type":"group"},"sort":{"lastcontent":"desc"}}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:19:"Latest Group Topics";s:14:"resultsPerPage";s:1:"5";s:10:"searchJSON";s:159:"{"date":{"from":"30"},"sort":{"created":"desc"},"exclude_type":["vBForum_PrivateMessage"],"starter_only":"1","channelguid":"vbulletin-4ecbdf567f3a38.99555306"}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-sgroups93742a5.43676038">
+		<title>Group</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<screenlayoutsectiondata>
+			<column>
+				<sectionnumber>0</sectionnumber>
+				<sourceorder>1</sourceorder>
+			</column>
+			<column>
+				<sectionnumber>1</sectionnumber>
+				<sourceorder>0</sourceorder>
+			</column>
+		</screenlayoutsectiondata>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_groupsummary-4eb423cfd6dea7.34930863</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_sgchanneldisplay-4eb423cfd6dea7.34930866</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-sgtopic93742a5.43676039">
+		<title>Group Discussion</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_6-4eb423cfd69f41.95279534</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_sgcategories-4eb423cfd6dea7.34930860</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:19:"Latest Group Topics";s:14:"resultsPerPage";s:1:"5";s:10:"searchJSON";s:159:"{"date":{"from":"30"},"sort":{"created":"desc"},"exclude_type":["vBForum_PrivateMessage"],"starter_only":"1","channelguid":"vbulletin-4ecbdf567f3a38.99555306"}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-sgcatlist93742a5.43676040">
+		<title>Group Category</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_sgcategorylist-4eb423cfd6dea7.34930865</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_sgcategories-4eb423cfd6dea7.34930860</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:3:{s:11:"searchTitle";s:19:"Latest Group Topics";s:14:"resultsPerPage";s:1:"5";s:10:"searchJSON";s:159:"{"date":{"from":"30"},"sort":{"created":"desc"},"exclude_type":["vBForum_PrivateMessage"],"starter_only":"1","channelguid":"vbulletin-4ecbdf567f3a38.99555306"}";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676041">
+		<title>Activate Your Account Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_activate_user-4eb423cfd6dea7.34930868</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676042">
+		<title>Email Activation Codes Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_activate_user-4eb423cfd6dea7.34930869</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93742a5.43676043">
+		<title>Coppa Permission Form</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_coppa_form-4eb423cfd6dea7.34930871</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-513e3ab811d8d4.37160575">
+		<title>CSS Examples Page</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_css_examples-513e3a82333a00.09897130</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-4ecbdac93721f3.19350822">
+		<title>Member List Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_memberlist-4eb423cfd6dea7.34930873</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pt-cmshome5229f9fc6f78f2.75718106">
+		<title>Articles Home Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_cmschanneldisplay-4eb423cfd6dea7.34930874</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:2:{s:12:"root_channel";s:54:"channelguid:vbulletin-c-cmshome5229fa38b251e2.92227401";s:5:"title";s:17:"phrase:categories";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_cmschannelnavigation-4eb423cfd6dea7.34930875</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:2:{s:12:"root_channel";s:54:"channelguid:vbulletin-c-cmshome5229fa38b251e2.92227401";s:5:"title";s:19:"phrase:article_tags";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_tagnavigation-4eb423cfd6dea7.34930876</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig>a:4:{s:11:"searchTitle";s:15:"Latest Articles";s:14:"resultsPerPage";s:1:"6";s:10:"searchJSON";s:78:"{"channel":{"param":"channelid"},"sort":{"created":"desc"},"starter_only":"1"}";s:12:"hide_avatars";s:1:"1";}</adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pt-cmscatlist5229fcd0dd3da7.64934873">
+		<title>Default Article Category Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_cmschanneldisplay-4eb423cfd6dea7.34930874</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:2:{s:12:"root_channel";s:54:"channelguid:vbulletin-c-cmshome5229fa38b251e2.92227401";s:5:"title";s:17:"phrase:categories";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_cmschannelnavigation-4eb423cfd6dea7.34930875</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:2:{s:12:"root_channel";s:54:"channelguid:vbulletin-c-cmshome5229fa38b251e2.92227401";s:5:"title";s:19:"phrase:article_tags";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_tagnavigation-4eb423cfd6dea7.34930876</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig>a:4:{s:11:"searchTitle";s:15:"Latest Articles";s:14:"resultsPerPage";s:1:"6";s:10:"searchJSON";s:78:"{"channel":{"param":"channelid"},"sort":{"created":"desc"},"starter_only":"1"}";s:12:"hide_avatars";s:1:"1";}</adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pt-cmsarticle5229fcffd5d428.54773744">
+		<title>Default Article Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-wide-narrow-ef8c99cab374d2.91030971</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_articledisplay-4eb423cfd6dea7.34930877</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:2:{s:12:"root_channel";s:54:"channelguid:vbulletin-c-cmshome5229fa38b251e2.92227401";s:5:"title";s:17:"phrase:categories";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_cmschannelnavigation-4eb423cfd6dea7.34930875</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>1</displayorder>
+				<adminconfig><![CDATA[a:2:{s:12:"root_channel";s:54:"channelguid:vbulletin-c-cmshome5229fa38b251e2.92227401";s:5:"title";s:19:"phrase:article_tags";}]]></adminconfig>
+				<widgetguid>vbulletin-widget_tagnavigation-4eb423cfd6dea7.34930876</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>1</displaysection>
+				<displayorder>2</displayorder>
+				<adminconfig>a:4:{s:11:"searchTitle";s:15:"Latest Articles";s:14:"resultsPerPage";s:1:"6";s:10:"searchJSON";s:78:"{"channel":{"param":"channelid"},"sort":{"created":"desc"},"starter_only":"1"}";s:12:"hide_avatars";s:1:"1";}</adminconfig>
+				<widgetguid>vbulletin-widget_search-4eb423cfd6a5f3.08329785</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pagetemplate-markuplibrary-796785120ec7e73ab.1002134871">
+		<title>vBulletin Markup Library</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_markup_library-55129b3ac88d9001.1908834732</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pagetemplate-apiform-5605adabb98994.13134185">
+		<title>API Form Page</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_apiform-5605ae410cfe70.79574745</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pagetemplate-resetpassword-5697ebc53d6573.06983939">
+		<title>Reset Password</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:10:"hide_title";s:1:"1";}]]></adminconfig>
+				<widgetguid>vbulletin-widget-resetpassword-5697f9156379b6.02050140</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pmchat-pagetemplate-chat-573ca81b74e5b0.79208063">
+		<title>vB Messenger Page Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-bare-full-57433eecd10803.93763070</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:2:{s:10:"hide_title";s:1:"1";s:5:"title";s:4:"Chat";}]]></adminconfig>
+				<widgetguid>vbulletin-pmchat-widget-chat-573cb2b3a78a93.12390691</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+	<pagetemplate guid="vbulletin-pagetemplate-calendar-58af7aebda8e71.47586077">
+		<title>vB Calendar Template</title>
+		<screenlayoutguid>vbulletin-screenlayout-full-ef8c99cab374d2.91030970</screenlayoutguid>
+		<widgets>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-2</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_announcement-4eb423cfd6dea7.34930845</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>2</displaysection>
+				<displayorder>-1</displayorder>
+				<adminconfig />
+				<widgetguid>vbulletin-widget_page_title-4eb423cfd6dea7.34930870</widgetguid>
+			</widgetinstance>
+			<widgetinstance>
+				<displaysection>0</displaysection>
+				<displayorder>0</displayorder>
+				<adminconfig><![CDATA[a:1:{s:8:"tab_data";a:2:{i:0;a:2:{s:5:"title";s:8:"Calendar";s:7:"widgets";a:1:{i:0;a:1:{s:4:"guid";s:49:"vbulletin-widget_calendar-589a1d028d8fc3.56111552";}}}i:1;a:2:{s:5:"title";s:4:"List";s:7:"widgets";a:1:{i:0;a:1:{s:4:"guid";s:55:"vbulletin-widget-upcomingevents-33f29410ce3a1f.70591930";}}}}}]]></adminconfig>
+				<widgetguid>vbulletin-widget-tabbedcontainer-589ba9e36d36c9.90641387</widgetguid>
+			</widgetinstance>
+		</widgets>
+	</pagetemplate>
+</pagetemplates>

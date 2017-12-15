@@ -10,3 +10,9 @@ $dbHost='localhost';
 $dbUser='user';
 $dbPass='password';
 $dbDatabase='vbulletin';
+
+//$outDir='C:\wamp64\www\vbulletin\manual\user\pages\14.admin_control_panel';
+$outDir="./output";
+$separator=DIRECTORY_SEPARATOR;
+
+$xmldi ="C:\wamp64\www\vbulletin\vb5_manual\core\includes\xml";

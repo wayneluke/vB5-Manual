@@ -6,18 +6,18 @@ require_once('./includes/functions.php');
 
 // Misc. Settings. These probably do not need to be changed.
 $templateTokens=['~title~','~title_slug~','~date~','~group~','~version~','~content~'];
-$contentTokens=['~title','~image~','~description~','~help~','~additionalinfo~','~varname~','~type~','~defaultvalue~'];
+$contentTokens=['~title~','~image~','~description~','~help~','~additionalinfo~','~varname~','~type~','~defaultvalue~'];
 $imageTokens=['~imageurl~','~caption~'];
 
 // Setup Necessary Queries.
 $query =[
-    'version' => "select value from setting where varname='templateversion'",
-    'groups' => "select distinct(stylevargroup) from stylevardfn;",
-    'settings' => "SELECT p.text AS title, p2.text AS 'description', s.varname, s.defaultvalue, s.datatype, s.displayorder FROM setting AS S 
-        LEFT JOIN settinggroup AS sg ON (s.grouptitle = sg.grouptitle)
-        LEFT JOIN phrase AS p ON (p.varname LIKE CONCAT('setting_', s.varname, '_title')) 
-        LEFT JOIN phrase AS p2 ON (p2.varname LIKE CONCAT('setting_', s.varname, '_desc')) 
-        WHERE s.grouptitle=? ORDER BY s.displayorder",
+    'version'   => "select value from setting where varname='templateversion'",
+    'groups'    => "select distinct(stylevargroup) from stylevardfn;",
+    'stylevars' => "select p1.text as 'title', p2.text as 'description', s.* from stylevardfn AS s
+        LEFT JOIN phrase AS p1 ON (p1.varname LIKE CONCAT('stylevar_', s.stylevarid, '_name')) 
+        LEFT JOIN phrase AS p2 ON (p2.varname LIKE CONCAT('stylevar_', s.stylevarid, '_description')) 
+        where stylevargroup=? ORDER BY s.stylevargroup ASC", 
+    'default_value'  => "select value from stylevar where stylevarid=? and styleid=-1",
 ];
 
 $dbConnect = new Database($dbHost,$dbName,$dbUser,$dbPass);
@@ -36,22 +36,41 @@ $groups = $dbConnect->run_query($query['groups']);
 $itemReplace=[];
 $currentItem='';
 
+$outDir = $outDir . $separator . 'stylevars';
+$pageCounter=0;
 foreach ($groups as $group) {
-    echo $group['title'] . "\n\r";
-    $settings = $dbConnect->run_query($query['settings'],[$group['grouptitle']]);
+    echo $group['stylevargroup'] . "\n\r";
+    $stylevars = $dbConnect->run_query($query['stylevars'],[$group['stylevargroup']]);
     $content='';
-    foreach ($settings as $setting) {
-        echo "\t\t". $setting['title'] ."\n\r";
-        $itemReplace=[$setting['title'],'',$setting['description'],'','',$setting['varname'],$setting['datatype'],$setting['defaultvalue']];
-        $currentItem = new Template('settingItem.inc');
-        $content.=$currentItem->parse($contentTokens,$itemReplace);
+    foreach ($stylevars as $stylevar) {
+        
+        $value_list="\n";
+        $default = $dbConnect->fetch_query($query['default_value'],[$stylevar['stylevarid']]);
+        $values = unserialize($default['value']);
+        foreach ($values as $key => $value) {
+            $value_list .= "\t- " . $key . ": " . $value . "\n";
+        }
+        $value_list .= "\n\r";
+        echo "\t". $stylevar['title'] ."\n\r";
+        $itemReplace=[
+            $stylevar['title'],          // title
+            '',                          // image
+            $stylevar['description'],    // description
+            '',                          // help
+            '',                          // additional info
+            $stylevar['stylevarid'],     // variable name
+            $stylevar['datatype'],       // type
+            $value_list,                 // default values    
+        ];
+        $currentItem = new Template('stylevarItem.inc');
+        $content.=$currentItem->parse($contentTokens,$itemReplace) . "\n";
     }
-    $groupDir = $outDir . $separator . $group['displayorder'] . '.' . $group['grouptitle'];
+    $groupDir = $outDir . $separator . ++$pageCounter . '.' . $group['stylevargroup'];
     create_directory($groupDir);
-    $templateReplace=[$group['title'], slugify($group['title']), $now, $group['grouptitle'], $curVersion, $content];
+    $templateReplace=[$group['stylevargroup'], slugify($group['stylevargroup']), $now, $group['stylevargroup'], $curVersion, $content];
 
-    $settingPage = new Template('settingPage.inc');
-    $page=$settingPage->parse($templateTokens,$templateReplace);
+    $stylevarPage = new Template('stylevarPage.inc');
+    $page=$stylevarPage->parse($templateTokens,$templateReplace);
     file_put_contents($groupDir . $separator . 'article.md', $page);
 }
 

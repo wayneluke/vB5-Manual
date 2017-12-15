@@ -41,7 +41,7 @@ $groups = $dbConnect->run_query($query['groups']);
 $itemReplace=[];
 $currentItem='';
 // $outDir .= $outDir . $separator . '06.admin_control_panel/02.settings/01.options';
-$outDir .= $outDir . $separator . 'options';
+$outDir = $outDir . $separator . 'options';
 foreach ($groups as $group) {
     echo $group['title'] . "\n\r";
     $settings = $dbConnect->run_query($query['settings'],[$group['grouptitle']]);

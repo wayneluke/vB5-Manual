@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<hooks>
+	<hooktype type="announcement">
+		<hook>announcement_total</hook>
+		<hook>announcement_after_list</hook>
+		<hook>announcement_no_announcement</hook>
+	</hooktype>
+
+	<hooktype type="conversation">
+		<hook>conversation_above_entry</hook>
+		<hook>conversation_above_usertitle</hook>
+		<hook>conversation_below_entry</hook>
+		<hook>conversation_footerleft</hook>
+		<hook>conversation_footerright</hook>
+		<hook>conversation_userstats</hook>
+		<hook>conversation_sharing</hook>
+		<hook>starter_threadview_text_1</hook>
+		<hook>starter_threadview_link_1</hook>
+		<hook>starter_threadview_poll_1</hook>
+		<hook>starter_threadview_video_1</hook>
+		<hook>starter_threadview_gallery_1</hook>
+		<hook>starter_threadview_infraction_1</hook>
+		<hook>reply_threadview_text_1</hook>
+		<hook>reply_threadview_link_1</hook>
+		<hook>reply_threadview_poll_1</hook>
+		<hook>reply_threadview_video_1</hook>
+		<hook>reply_threadview_gallery_1</hook>
+	</hooktype>
+
+	<hooktype type="editor">
+		<hook>editor_additional_panels</hook>
+		<hook>editor_after_primary_toolbar_icons</hook>
+		<hook>editor_after_secondary_toolbar_icons</hook>
+		<hook>editor_input_polls_options</hook>
+	</hooktype>
+
+	<hooktype type="footer">
+		<hook>footer_left</hook>
+		<hook>footer_right</hook>
+		<hook>footer_start</hook>
+		<hook>footer_end</hook>
+		<hook>footer_before_body_end</hook>
+		<hook>footer_copyright</hook>
+	</hooktype>
+
+	<hooktype type="general">
+		<hook>forumitem_below_description</hook>
+		<hook>topics_after_sticky</hook>
+	</hooktype>
+
+	<hooktype type="header">
+		<hook>header_head</hook>
+		<hook>header_after_body_begin</hook>
+		<hook>header_toolbar</hook>
+		<hook>header_tabbar</hook>
+		<hook>header_navright</hook>
+		<hook>header_before_content</hook>
+	</hooktype>
+
+	<hooktype type="profile">
+		<hook>profile_activity_start</hook>
+		<hook>profile_activity_end</hook>
+		<hook>profile_about_posts</hook>
+		<hook>profile_about_vms</hook>
+		<hook>profile_about_general</hook>
+		<hook>profile_about_links</hook>
+		<hook>profile_about_sectionend</hook>
+		<hook>profile_basics_end</hook>
+		<hook>profile_contacts_end</hook>
+		<hook>profile_sidebar_1</hook>
+		<hook>profile_sidebar_2</hook>
+		<hook>profile_sidebar_3</hook>
+		<hook>profile_tabs_1</hook>
+		<hook>profile_tabs_2</hook>
+		<hook>profile_tabs_3</hook>
+	</hooktype>
+
+	<hooktype type="settings">
+		<hook>settings_tab_list</hook>
+		<hook>settings_tab_page</hook>
+		<hook>settings_profile</hook>
+		<hook>settings_account</hook>
+		<hook>settings_notifications</hook>
+		<hook>settings_privacy</hook>
+		<hook>settings_privacy_profile</hook>
+	</hooktype>
+
+	<hooktype type="screen">
+		<hook>screen1_section0</hook>
+		<hook>screen1_section2</hook>
+		<hook>screen1_section3</hook>
+		<hook>screen2_section0</hook>
+		<hook>screen2_section1</hook>
+		<hook>screen2_section2</hook>
+		<hook>screen2_section3</hook>
+		<hook>screen4_section0</hook>
+		<hook>screen4_section1</hook>
+		<hook>screen4_section2</hook>
+		<hook>screen4_section3</hook>
+		<hook>screenlayout_threecol_15_15_70_section0</hook>
+		<hook>screenlayout_threecol_15_15_70_section1</hook>
+		<hook>screenlayout_threecol_15_15_70_section2</hook>
+		<hook>screenlayout_threecol_15_15_70_section3</hook>
+		<hook>screenlayout_threecol_15_15_70_section4</hook>
+		<hook>screenlayout_threecol_15_70_15_section0</hook>
+		<hook>screenlayout_threecol_15_70_15_section1</hook>
+		<hook>screenlayout_threecol_15_70_15_section2</hook>
+		<hook>screenlayout_threecol_15_70_15_section3</hook>
+		<hook>screenlayout_threecol_15_70_15_section4</hook>
+		<hook>screenlayout_threecol_70_15_15_section0</hook>
+		<hook>screenlayout_threecol_70_15_15_section1</hook>
+		<hook>screenlayout_threecol_70_15_15_section2</hook>
+		<hook>screenlayout_threecol_70_15_15_section3</hook>
+		<hook>screenlayout_threecol_70_15_15_section4</hook>
+		<hook>screenlayout_threecol_25_25_50_section0</hook>
+		<hook>screenlayout_threecol_25_25_50_section1</hook>
+		<hook>screenlayout_threecol_25_25_50_section2</hook>
+		<hook>screenlayout_threecol_25_25_50_section3</hook>
+		<hook>screenlayout_threecol_25_25_50_section4</hook>
+		<hook>screenlayout_threecol_25_50_25_section0</hook>
+		<hook>screenlayout_threecol_25_50_25_section1</hook>
+		<hook>screenlayout_threecol_25_50_25_section2</hook>
+		<hook>screenlayout_threecol_25_50_25_section3</hook>
+		<hook>screenlayout_threecol_25_50_25_section4</hook>
+		<hook>screenlayout_threecol_50_25_25_section0</hook>
+		<hook>screenlayout_threecol_50_25_25_section1</hook>
+		<hook>screenlayout_threecol_50_25_25_section2</hook>
+		<hook>screenlayout_threecol_50_25_25_section3</hook>
+		<hook>screenlayout_threecol_50_25_25_section4</hook>
+		<hook>screenlayout_threecol_33_33_33_section0</hook>
+		<hook>screenlayout_threecol_33_33_33_section1</hook>
+		<hook>screenlayout_threecol_33_33_33_section2</hook>
+		<hook>screenlayout_threecol_33_33_33_section3</hook>
+		<hook>screenlayout_threecol_33_33_33_section4</hook>
+	</hooktype>
+
+	<hooktype type="subscribe">
+		<hook>subscribed_start</hook>
+		<hook>subscribed_no_subs</hook>
+		<hook>following_list_start</hook>
+		<hook>following_list_end</hook>
+	</hooktype>
+
+	<hooktype type="widgets">
+		<hook>blog_display_controls</hook>
+		<hook>channel_display_controls</hook>
+		<hook>conversation_before_display_controls</hook>
+		<hook>conversation_display_controls</hook>
+		<hook>group_display_controls</hook>
+	</hooktype>
+
+	<!-- Test Hook -->
+	<hooktype type="Test Hooks">
+		<hook>generic_test</hook>
+	</hooktype>
+</hooks>
+
+<!-- CVS: $RCSfile$ - $Revision: 94963 $ -->
