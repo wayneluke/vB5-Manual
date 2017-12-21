@@ -87,13 +87,13 @@ ol > li::before {
 }
 
 .gallery {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .gallery figure {
-  text-align: center;
+    text-align: center;
 }
 
 .gallery img {
@@ -105,12 +105,16 @@ ol > li::before {
 
 
 .gallery figcaption {
-  width: 250px;
-  text-align: left;
-  margin: 0 auto;
-  padding-left: 8px;
+    width: 250px;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 8px;
 }
 
-.index {
-        column-count: 3;
+.index, .columns {
+    column-count: 4;
+}
+
+#chapter .columns li {
+    list-style: none;
 }

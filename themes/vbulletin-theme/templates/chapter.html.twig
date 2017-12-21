@@ -7,7 +7,7 @@
 				{{ page.content }}
 				<hr>
 				<p>Articles in this chapter:</p>
-				<ul>
+				<ul class="columns">
 				{% for child in page.collection %}
     				<li><a href="{{ child.url }}">{{ child.title }}</a></li>
 				{% endfor %}
