@@ -11,5 +11,5 @@ keywords: grav, theme, etc
 bugs: https://github.com/wayne/grav-theme-vbulletin-theme/issues
 readme: https://github.com/wayne/grav-theme-vbulletin-theme/blob/develop/README.md
 license: MIT
-top_level_version: true
+top_level_version: false
 
