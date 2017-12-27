@@ -4,7 +4,7 @@ slug: footer
 ---
 
 [toc]
-## What is the page footer?
+## What is the Footer?
 The footer is a list of navigation links that appears at the bottom of the site. With Site Builder, you’re able to add links to the footer that can take your users anywhere you want them to go. These items behave similarly to Navigation Links in the Navigation Bar. Unlike the Navigation Bar, the footer doesn't allow for sub-navigation menus to be created. Any changes to the Footer are global and apply to all pages.
 
 ## How to add a Footer Link
@@ -28,8 +28,4 @@ Find the navigation item you want to edit and click the Edit ([fa=fa-pencil]) ic
 If Site Builder is not active, turn the system on by clicking the [button="sb-editsite"]Edit Site[/button] button to the right of your username.
 
 Click on the ‘Footer’ button. This will open form beneath the menu bar. From here, click on the Delete ([fa=fa-trash-o]) icon to the right of the Footer Link that you want to remove. When you’re done making your changes, click on [button="sb-editorbutton"]Save Changes[/button] at the top of the Footer editor.
-
-
-
-
 
