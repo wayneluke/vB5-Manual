@@ -7,7 +7,7 @@ slug: navigation_bar
 The Navigation Bar makes up the primary menu in vBulletin. End-users will use this navigation to reach the sections of your site. It is displayed directly below the Header. The Navigation Bar is made up of two parts. First is the Main Navigation Bar. When using the Styles provided by the software, the Navigation Bar appears as a series of horizontal tabs under the Header. Second, each Tab in the Main Navigation Bar can have a collection of Sub-Navigation Links assigned to it. This is called the Sub-Navigation Bar. Sub-Navigation Links appear beneath the tab which they are attached.  It appears as a horizontal menu. 
 
 ## Accessing the Navigation Bar Controls.
-To add a navigation item to your site, make sure that Site Builder is turned on by clicking the [button="sb-editsite"]Edit Site[/button] button in the user menu at the top of the page. Once the Site Builder menu appears, click on the “Navigation Bar” link.
+To add a navigation item to your site, make sure that Site Builder is turned on by clicking the [button="sb-editsite"]Edit Site[/button] button in the user menu at the top of the page. Once the Site Builder menu appears, click on the Navigation Bar link.
 
 ## How to Add Navigation Items
 Open the Navigation Bar editor by clicking its link in the Site Builder Menu. The Navigation Editor will open beneath the Site Builder Menu. In the editor, click the [button="sb-bluebutton"]New Navigation Item[/button] button. A dialog will appear where you can enter the name of the Navigation Item, the URL of its destination, and control who sees it.

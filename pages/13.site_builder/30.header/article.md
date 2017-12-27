@@ -11,6 +11,9 @@ taxonomy:
 [toc]
 The Header appears on every page just above the Navigation Bar. This displays your Site Logo and optional advertisements or ads.
 
+## Accessing the Header Controls.
+To add a navigation item to your site, make sure that Site Builder is turned on by clicking the [button="sb-editsite"]Edit Site[/button] button in the user menu at the top of the page. Once the Site Builder menu appears, click on the Header link.
+
 ## How to Change the Site Logo
 Alright, so now that you have your first page set up, you might want to change the site logo. You no longer have to login to the AdminCP in order to do that. You can change the site logo directly through the Site Builder. When you have it turned on, click on the “Header” button. You’ll see a form similar to the one below pop up:
 
