@@ -132,7 +132,7 @@ Used in conjunction with vb:if, the result is output if the `vb:if` condition fa
 In order to process the conditionals in an vb:if statement, a number of PHP and vBulletin functions have been made available. Using a function not in this list will cause compilation of the template to fail.
 - PHP Literal Operators: AND, OR, XOR
 - PHP Functions: in_array, is_array, is_numeric, is_string, isset, empty, defined, array, gmdate, mktime, gmmktime, count, size, preg_match, explode, array_shift, substr, strpos, strlen, reset, ceil, array_reverse, array_key_exists, date, range, end, prev, intval, sprintf
-- - vBulletin Functions: can_moderate, is_browser, is_member_of, is_came_from_search_engine, vbdate    
+- vBulletin Functions: can_moderate, is_browser, is_member_of, is_came_from_search_engine, vbdate    
 
 ##### vb:if example
 ```
