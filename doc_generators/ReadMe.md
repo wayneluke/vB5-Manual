@@ -28,15 +28,15 @@ These phrases are combined with other database data and configuration settings t
  
 ## Database Tables
 Several database tables have been added to a default installation of vBulletin to hold additional data for the generators.
-- settinggroup_documentation
+- documentation_settinggroup
     - Fields: grouptitle (unique), documentation, imagepath
-- settings_documentation
+- documentation_settings
     - Fields: varname (unique), documentation, example, imagepath
-- stylevar_group_documentation
+- documentation_stylevargroup
     - Fields: stylevargrou (unique), documentation, imagepath
-- stylevars_documentation
+- documentation_stylevars
     - Fields: varname (unique), documentation, example
-- pages_documentation
+- documentation_pages
     - Fields: guid (unique), documentation, modules
-- widgets_documentation
+- documentation_widgets
     - Fields: guid (unique), documentation, example, imagepath
