@@ -17,5 +17,6 @@ The Theme Selection tool will show all Styles installed in your vBulletin Site. 
 
 ## CSS Editor
 ![CSS Editor](./css.png)
-[notice]Editing the CSS is for advanced users.[/notice]
-Using the CSS Editor, you can alter how your site looks and feels, hide elements, and create a unique experience. 
+Using the CSS Editor, you can alter how your site look and feel, hide elements, and create a unique experience. 
+
+[notice=warning]Editing the CSS is for advanced users. Technical support is not guaranteed for custom CSS.[/notice]
