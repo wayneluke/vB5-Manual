@@ -10,6 +10,7 @@ taxonomy:
         - developers
         - extend
         - products
+visible: false
 ---
 
 # Developers
