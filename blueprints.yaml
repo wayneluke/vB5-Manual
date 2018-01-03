@@ -1,0 +1,16 @@
+name: vBulletin 5 Connect Manual
+version: 5.4.0.201712
+description: "Documentation for the vBulletin 5 Connect Community Forum System and Mobile Apps. Includes documentation for site owners, moderators, end users, and developers."
+icon: 
+author:
+ name: Wayne Luke
+ email: wayne.luke@vbulletin.com
+ url: http://www.vbulletin.com
+homepage: https://github.com/wayneluke/vB5-Manual
+demo: http://vb5support.com
+docs: https://github.com/wayneluke/vB5-Manual
+keywords: Grav, vBulletin, Documentation
+bugs: https://github.com/wayneluke/vB5-Manual/issues
+license: MIT
+
+dependencies:

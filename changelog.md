@@ -1,5 +1,18 @@
 # Change Log
 
+# Releases
+Release versions are tied to the vBulletin 5 Connect version followed by the year and month of the release.
+
+## 5.4.0.201712
+- Milestone Release.
+    - Various Article Updates.
+    - New Document Generators.
+
+## January 2018
+### January 3
+- Preparation for new Milestone.
+- Add Grav's blueprints.yaml configuration file for this project
+ 
 ## December 2017
 ### December 12
 - Updated readme.md file.
