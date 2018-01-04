@@ -12,10 +12,15 @@ This is the default vBulletin 5 .htaccess file.
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
-	#In some cases where you have other mod_rewrite rules, you may need to comment out the following line
-	#and change it to match your folder name. This resets the other mod_rewrite rules for just this directory
-	#If your site was www.example.com/forum, the setting would be /forum/
+	# In some cases where you have other mod_rewrite rules, you may need to remove the 
+	# comment on the following RewriteBase line and change it to match your folder name. 
+	# This resets the other mod_rewrite rules for just this directory
+	# If your site was www.example.com/forum, the setting would be /forum/
 	#RewriteBase /
+
+	#To redirect users to the secure version of your site, uncomment the lines below 
+	#RewriteCond %{HTTPS} !=on
+	#RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
 	# Send css calls directly to the correct file VBV-7807
 	RewriteRule ^css.php$ core/css.php [NC,L]
@@ -32,6 +37,27 @@ This is the default vBulletin 5 .htaccess file.
 	# Because admincp is an actual directory.
 	RewriteRule ^(admincp/)$ index.php?routestring=$1 [L,QSA]
 
+</IfModule>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE application/atom+xml \
+                          text/javascript \
+                          application/x-javascript \
+                          application/javascript \
+                          application/json \
+                          application/rss+xml \
+                          application/vnd.ms-fontobject \
+                          application/x-font-ttf \
+                          application/xhtml+xml \
+                          application/xml \
+                          font/opentype \
+                          image/svg+xml \
+                          image/x-icon \
+                          text/css \
+                          text/html \
+                          text/plain \
+                          text/x-component \
+                          text/xml
 </IfModule>
 
 <IfModule mod_expires.c>
@@ -79,4 +105,12 @@ This is the default vBulletin 5 .htaccess file.
 	</filesmatch>
 </IfModule>
 
+#don't allow some files that shouldn't really be present to be directly accessed.
+#note that attachements should never be directly accessed by the webserver because
+#we have permissions on the that are checked in the PHP code.
+<FilesMatch "(^#.*#|\.(bak|config|dist|inc|ini|log|gz|tar|zip|sh|sql|sw[op])|~)$">
+    Order allow,deny
+    Deny from all
+    Satisfy All
+</FilesMatch>
 ```

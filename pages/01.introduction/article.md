@@ -12,7 +12,7 @@ visible: true
 template: docs
 ---
 
-![vBulletin 5 Screenshot](vbulletin_5.png)
+![vBulletin 5 Screenshot](/images/vbulletin_5.png)
 
 
 vBulletin Connect is a community platform that is driven by your end users. The system allows you to build custom community sites without coding. Community driven content management allows for content that is always fresh and relevent. Using vBulletin allows you to engage your users in content creation, collation and distribution. 
