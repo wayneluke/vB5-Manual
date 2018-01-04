@@ -14,10 +14,15 @@ template: docs
 ---
 [toc]
 
+## Obtaining a domain name for your site
+When you create your vBulletin Cloud account, you can register a personal custom domain name to use with your site. When asked, enter your choice of domain name and the system will perform a search of available domain names and similar domain names. Make your choice from the resulting list. Once you make your choice, we cannot change it. Make sure that you are happy with the choice you make.
+
+## Using a previously registered domain name.
 With vBulletin Cloud, you can choose a custom domain name if you are the registrer of that name. Within the Cloud system, we will use a subdomain such as www.example.com or forum.example.com. This is handled by a CNAME Record that is created at your domain registrar or the hosting provider of your main website.
 
-## Managing your CNAME Record
+[notice]Subdomains must be at least two characters long[/notice]
 
+### Managing your CNAME Record
 Updating your CNAME record allows you to point your custom domain (e.g. myvbulletincloud.com) to the sub-domain assigned to your account. In order to do this you’ll need to visit your domain name registrar and update the records on their site. If you are also using the domain for a regular site, you’ll need to redirect a sub-domain (e.g. forums.myvbulletincloud.com).
 
 To add a CNAME record:
@@ -29,7 +34,7 @@ To add a CNAME record:
 5.	Save your records.
 6.	Wait for the records to propagate. This can take up to 24 hours.
 
-## Specific Registrars
+### Specific Registrars
 Individual registrars will have their own steps to follow in order to set this up. Some more complex than others. Here is a list of various registrars and hosting providers. If you’re provider isn’t listed, you will need to contact them directly for help.
 
 + [123-Reg](http://www.123-reg.co.uk/support/answers/Domains/Domain-Configuration/how-do-i-set-up-a-cname-record-on-my-domain-name-1198/)
@@ -40,7 +45,7 @@ Individual registrars will have their own steps to follow in order to set this u
 + [Network Solutions](http://www.networksolutions.com/support/cname-records-host-aliases/)
 + [Register.com](http://support.launchrock.co/knowledgebase/articles/137754-register-com-cname-record-instructions)
 
-## Hosting Providers
+### Hosting Providers
 Hosting providers may also have their own practices. Here are links to some of the more common hosting providers.
 + [1&1](https://help.1and1.com/domains-c36931/domain-administration-c79822/dns-settings-c37586/enter-a-cname-record-for-your-domain-a643600.html)
 * [A Small Orange](https://kb.asmallorange.com/customer/portal/articles/1603070-all-about-subdomains)
@@ -48,7 +53,7 @@ Hosting providers may also have their own practices. Here are links to some of t
 + [Hostgator](http://support.hostgator.com/articles/cpanel/how-to-change-dns-zones-mx-cname-and-a-records+) 
 + [HostMonster](https://my.hostmonster.com/cgi/help/cname)
 
-## Getting Help With Your CNAME
+### Getting Help With Your CNAME
 + If you need help finding your vBulletin Cloud subdomain, contact vBulletin Support.
 + If you need help changing your CNAME record contact your registrar or hosting provider. vBulletin Support cannot set up or create a CNAME for you.
 

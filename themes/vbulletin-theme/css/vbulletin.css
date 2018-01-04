@@ -1,3 +1,63 @@
+body {
+    font-family: "Muli", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    letter-spacing: -0.03rem;
+    font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    line-height: 150%;
+    letter-spacing: -0px; }
+h1 {
+    text-align: left;
+    letter-spacing: -3px; }
+h2 {
+    letter-spacing: -2px; }
+h3 {
+   letter-spacing: -1px; }
+
+#chapter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem 0; }
+#chapter #body-inner {
+    padding-bottom: 3rem;
+    max-width: 80%; }
+#chapter h3 {
+    font-family: "Muli", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    text-align: center; }
+#chapter h1 {
+    font-size: 5rem;
+    border-bottom: 4px solid #F0F2F4; }
+#chapter p {
+    text-align: justify;
+    font-size: 1.2rem; }    
+
+table.comparison-chart {
+    width:85%;
+    margin: 8px auto}
+.comparison-chart th {
+    text-align: center;
+    margin:0 auto;}
+.comparison-chart__detail {
+    text-align: center;
+
+}
+.comparison-chart__column {
+    width:20%;
+}
+.comparison-chart .fa-check {
+    color: #1694CA;
+}
+
+.comparison-chart .fa-times {
+    color: rgb(202, 22, 22);
+}
+
 dt {font-weight:bold;}
 
 .right {
@@ -8,10 +68,6 @@ dt {font-weight:bold;}
 }
 
 .nav-prev, .nav-next {display:none;}
-
-#chapter p {
-    text-align: justify;
-}
 
 ol {
     margin-left: 0;
