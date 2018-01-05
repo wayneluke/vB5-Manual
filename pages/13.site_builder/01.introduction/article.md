@@ -18,11 +18,11 @@ Everything else is controlled and administered using the [AdminCP](/admin_contro
 ## Accessing Site Builder
 If you’re an Administrator in vBulletin 5, you might have noticed a new button to the right of your login. This button lets you access the Site Builder. The Site Builder lets you create new pages, and add and remove modules to existing pages. It also allows you to edit the header, the footer and the navigation bar.  
 
-![Menu with Site Builder Off](./sitebuilder_off.png)
+![Menu with Site Builder Off](/images/sitebuilder/general/sitebuilder_off.png)
 
 The first step in customizing pages on your site is to turn Site Builder on. To do that, just click the <button>Edit Site</button> button. This will reveal a new menu items at the top of the page, like this:
 
-![Menu with Site Builder On](./sitebuilder_on.png)
+![Menu with Site Builder On](/images/sitebuilder/general/sitebuilder_on.png)
 
 The new items are the commands for Site Builder. These are: Channels, Style, Pages, New Page, Edit Page, Header, Navigation Bar, and Footer. Each option controls and edits a different part of your site. Clicking on a button will open and reveal the related tools.
 
