@@ -36,7 +36,7 @@ $groups = $dbConnect->run_query($query['groups']);
 $itemReplace=[];
 $currentItem='';
 
-$outDir = $outDir . $separator . 'stylevars';
+$outDir = $outDir . $separator . '10.customizing_vbulletin\04.styles\20.stylevars\01.stylevar_reference';
 $pageCounter=0;
 foreach ($groups as $group) {
     echo $group['stylevargroup'] . "\n\r";
@@ -45,9 +45,15 @@ foreach ($groups as $group) {
     foreach ($stylevars as $stylevar) {
         
         $value_list="\n";
+        if (!isset($stylevar['title']) or $stylevar['title'] == null or $stylevar['title'] === '') {
+            $stylevar['title'] = $stylevar['stylevarid'];
+        }        
         $default = $dbConnect->fetch_query($query['default_value'],[$stylevar['stylevarid']]);
         $values = unserialize($default['value']);
         foreach ($values as $key => $value) {
+            if (strpos($key,'stylevar_') === 0) {
+                continue;
+            }
             $value_list .= "\t- " . $key . ": " . $value . "\n";
         }
         $value_list .= "\n\r";

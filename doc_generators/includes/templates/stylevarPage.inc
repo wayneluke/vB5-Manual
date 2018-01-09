@@ -13,4 +13,5 @@ version: ~version~
 date: ~date~
 ---
 
+[toc]
 ~content~

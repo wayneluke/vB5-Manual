@@ -11,46 +11,48 @@ taxonomy:
         - stylevar
 slug: stylevars
 visible: true 
-template: docs
+template: article
 ---
 
-[ui-tabs position="top-left" active="0" theme="lite"]
-[ui-tab title="Global"]
-Global Style Variables Go Here.
-[/ui-tab]
+[toc]
+Style Variables (often called Stylevars) are variables that contain one of more CSS Attributes used to control the appearance of some aspect of a vBulletin style. Stylevars are used in conjunction with CSS and Templates to control the look and feel of your vBulletin site.
 
-[ui-tab title="Header"]
-[ui-callout]
-[ui-callout-item title="Site Builder / User Menu" position="15.3%, 35%, nw"]
-This top menu holds user information as well as the Site Builder Menu as needed. When a user is logged in, they can access important areas of their account from this menu. The look of this menu is controlled by style variables prefixed with `main_nav_admin_bar`. 
-[/ui-callout-item]
-[ui-callout-item title="Logo" position="28%, 16%, nw"]
-This is the logo of your site. You can upload a logo directly using the Header tool in Site Builder. Alternatively, you can use a logo stored elsewhere by editing the `titleimage` style variable in the AdminCP.
-[/ui-callout-item]
-[ui-callout-item title="Header Background" position="28%, 48%, nw"]
-This is the header background. You can alter this with the `header_background` style variable. Attributes include color, background image, repeat. Hint, set the color to transparent to allow the page background to show in this area.
-[/ui-callout-item]
-[ui-callout-item title="Search Box" position="27%, 97.5%, nw"]
-The search box is controlled by the style variables prefixed with the `header_search`. Altering these style variables can change the look and feel of the search box.
-[/ui-callout-item]
-[ui-callout-item title="Navigation Bar" position="44%, 35%, nw"]
-The Tab Bar shows your primary navigation. This can be changed by editing the style variables prefixed with `header_tabbar`. The individual tabs can be style with the style variables prefixed with `header_tab`. Additionally each tab will have a unique CSS ID that can be used for advanced modifications using the additional template accessible through the template editor or the Style tab in Site Builder. You can add additional tabs using the Navigation Bar tool in Site Builder.
-[/ui-callout-item]
-[ui-callout-item title="Sub-Navigation Bar" position="49%, 52%, nw"]
-Additional navigation links can be placed in the sub-navigation for each tab. This is unique per tab and can be controlled via the Navigation Bar tool in Site Builder. To change the look and feel of the sub-navigation you will edit style variables prefixed with `header_subtabbar`.
-[/ui-callout-item]
-[ui-callout-item title="Breadcrumbs" position="54%, 8%, nw"]
-The breadcrumbs for the page will show here. Breadcrumbs are another tool to help users navigate your site. The look of your breadcrumbs are controlled by all the style variables starting with `breadcrumb`.
-[/ui-callout-item]
-[ui-callout-item title="Notices" position="63%, 43%, nw"]
-Notices are pieces of information that you want the user to regard with importance. The look of your notices can be controlled with style variables starting with `notice`.
-[/ui-callout-item]
-![](./header.png)
-[/ui-callout]    
+StyleVars are incorporated into CSS and Templates using the {vb:stylevar} syntax. While Stylevars are primarily used within CSS in vBulletin, they can be used in HTML templates as well. 
 
+## How Style Variables are used in CSS
+vBulletin uses Style Variables to dynamically build the CSS it uses for rendering during page load or when the files are written to the server, if you have enabled that option. The use of Style Variables allows you to build different styles from which your users can choose.
 
-[/ui-tab]
+Here is a sample of code in a CSS template:
 
-[ui-tab title="Footer"]
-[/ui-tab]
-[/ui-tabs]
+```
+.postbit, .postbitlegacy, .eventbit {
+	margin-bottom: {vb:stylevar padding};
+	display:block;
+	width: 100%;
+	clear:both;
+	position: relative;
+	float: {vb:stylevar left};
+	color: {vb:stylevar body_color};
+	border: {vb:stylevar postbit_border};
+}
+```
+
+This code contains several style variable references denoted by [var]{vb:stylevar}[/var] tags. The vBulletin template engine retrieves the values of the style variables and inserts them directly into the CSS before it is used for rendering.
+
+### CSS Math Tag
+It is possible to use style variables in mathematical expressions with the [var]{vb:math}[/var] tag.
+
+This is used to evaluate the result of the mathematical expression specified. The syntax is:
+
+```
+{vb:math expression}
+```
+
+An example using {vb:math} is:
+
+```
+height:{vb:math 8px + {vb:math {vb:stylevar font.fontSize}-1}};
+```
+
+This expression determines the height of an element based on the font size specified in the font style variable and an extra value of 8 pixels.
+
