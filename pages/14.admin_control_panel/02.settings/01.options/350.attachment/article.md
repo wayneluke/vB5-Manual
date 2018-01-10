@@ -10,7 +10,7 @@ taxonomy:
 visible: false
 template: article
 version: 5.4.0 Alpha 1
-date: 1/10/2018 12:19am
+date: 1/10/2018 01:21am
 ---
 
 [toc]
@@ -136,5 +136,5 @@ Several image sizes are created on demand for uploaded images.  The max dimensio
 
 - Variable Name: attachresizes
 - Data Type: free
-- Default Value: a:5:{s:4:"icon";i:32;s:5:"thumb";i:121;s:5:"small";i:204;s:6:"medium";i:330;s:5:"large";i:0;}
+- Default Value: a:5:{s:4:&quot;icon&quot;;i:32;s:5:&quot;thumb&quot;;i:121;s:5:&quot;small&quot;;i:204;s:6:&quot;medium&quot;;i:330;s:5:&quot;large&quot;;i:0;}
 [/segment]

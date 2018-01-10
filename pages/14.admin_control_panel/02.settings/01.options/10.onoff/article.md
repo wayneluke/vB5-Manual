@@ -10,7 +10,7 @@ taxonomy:
 visible: false
 template: article
 version: 5.4.0 Alpha 1
-date: 1/10/2018 12:19am
+date: 1/10/2018 01:21am
 ---
 
 [toc]
@@ -35,5 +35,5 @@ Note: as an administrator, you will be able to see the forums as usual, even whe
 
 - Variable Name: bbclosedreason
 - Data Type: free
-- Default Value: <div class="forum-off restore">Sorry, the board is unavailable at the moment while we are testing some functionality. We will be back soon...</div>
+- Default Value: &lt;div class=&quot;forum-off restore&quot;&gt;Sorry, the board is unavailable at the moment while we are testing some functionality. We will be back soon...&lt;/div&gt;
 [/segment]

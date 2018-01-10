@@ -50,7 +50,7 @@ foreach ($groups as $group) {
     $content='';
     foreach ($settings as $setting) {
         echo "\t\t". $setting['title'] ."\n\r";
-        $itemReplace=[$setting['title'],'',$setting['description'],'','',$setting['varname'],$setting['datatype'],$setting['defaultvalue']];
+        $itemReplace=[$setting['title'],'',$setting['description'],'','',$setting['varname'],$setting['datatype'],htmlentities($setting['defaultvalue'])];
         $currentItem = new Template('settingItem.inc');
         $content.=$currentItem->parse($contentTokens,$itemReplace);
     }
