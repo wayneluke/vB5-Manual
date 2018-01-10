@@ -9,15 +9,29 @@ taxonomy:
         - activity_stream
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Oldest Content in Forum
 This is the oldest post that will be displayed in a forum listing, like the home page.
 
-## Maximum Age for Topic
+
+
+- Variable Name: max_age_channel
+- Data Type: integer
+- Default Value: 60
+[/segment][segment=option]
+
+## Maximum Age for Topic
 This is the oldest post that will be displayed on a standard topic page.
 
-
 
+
+- Variable Name: max_age_topic
+- Data Type: integer
+- Default Value: 60
+[/segment]

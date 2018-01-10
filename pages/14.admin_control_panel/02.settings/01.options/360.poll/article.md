@@ -9,28 +9,63 @@ taxonomy:
         - poll
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Maximum Poll Options
 Maximum number of options a user can select for the poll.<br />
 <br />
 Set this option to 0 to allow any number of options.
 
-## Poll Option Length
+
+
+- Variable Name: maxpolloptions
+- Data Type: integer
+- Default Value: 10
+[/segment][segment=option]
+
+## Poll Option Length
 Maximum length that a poll option can be.
 
-## Update Topic Last Post on Poll Vote
+
+
+- Variable Name: maxpolllength
+- Data Type: integer
+- Default Value: 100
+[/segment][segment=option]
+
+## Update Topic Last Post on Poll Vote
 If you set this option to 'Yes' the topic's last post time will be updated when a vote is placed, thereby returning it to the top of its parent forum listing.<br />
 <br />
 Note that this option can cause confusion. The last post time of a topic will be changed with no visible post.
 
-## Required Topic Rating Votes to Show Rating
+
+
+- Variable Name: updatelastpost
+- Data Type: boolean
+- Default Value: 
+[/segment][segment=option]
+
+## Required Topic Rating Votes to Show Rating
 This option specifies the number of topic rating votes that must be cast of a particular topic before the current rating is displayed on forumdisplay.php and showthread.php.
 
-## Allow Topic Rating Vote Changes
+
+
+- Variable Name: showvotes
+- Data Type: integer
+- Default Value: 1
+[/segment][segment=option]
+
+## Allow Topic Rating Vote Changes
 Allow users to change their original rating of a topic?
 
-
 
+
+- Variable Name: votechange
+- Data Type: boolean
+- Default Value: 
+[/segment]

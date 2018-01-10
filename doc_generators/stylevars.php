@@ -12,7 +12,7 @@ $imageTokens=['~imageurl~','~caption~'];
 // Setup Necessary Queries.
 $query =[
     'version'   => "select value from setting where varname='templateversion'",
-    'groups'    => "select distinct(stylevargroup) from stylevardfn;",
+    'groups'    => "select distinct(stylevargroup) from stylevardfn ORDER BY stylevargroup ASC;",
     'stylevars' => "select p1.text as 'title', p2.text as 'description', s.* from stylevardfn AS s
         LEFT JOIN phrase AS p1 ON (p1.varname LIKE CONCAT('stylevar_', s.stylevarid, '_name')) 
         LEFT JOIN phrase AS p2 ON (p2.varname LIKE CONCAT('stylevar_', s.stylevarid, '_description')) 

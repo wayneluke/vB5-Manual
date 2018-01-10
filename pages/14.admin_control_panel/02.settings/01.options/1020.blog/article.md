@@ -9,12 +9,19 @@ taxonomy:
         - blog
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Default Page Template
 Specify the default page template to use for blogs
 
-
 
+
+- Variable Name: blog_pagetemplate
+- Data Type: number
+- Default Value: 
+[/segment]

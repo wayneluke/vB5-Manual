@@ -15,4 +15,4 @@ $dbDatabase='vbulletin';
 $outDir="./output";
 $separator=DIRECTORY_SEPARATOR;
 
-$xmldi ="C:\wamp64\www\vbulletin\vb5_manual\core\includes\xml";
+$xmlDir ="C:\wamp64\www\vbulletin\vb5_manual\core\includes\xml";

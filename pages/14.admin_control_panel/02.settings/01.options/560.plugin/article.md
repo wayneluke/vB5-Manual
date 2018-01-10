@@ -9,14 +9,21 @@ taxonomy:
         - plugin
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Enable Hook System
 This setting allows you to globally enable or disable the hook system.<br />
 <br />
 By switching the system off, only vBulletin-native code will be run, so it can be used to establish whether errors exist within vBulletin itself or in hook code.
 
-
 
+
+- Variable Name: enablehooks
+- Data Type: boolean
+- Default Value: 0
+[/segment]

@@ -9,12 +9,19 @@ taxonomy:
         - paidsubs
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Paid Subscription Email Notification
 An email will be sent to this email address when a paid subscription is purchased or reversed.
 
-
 
+
+- Variable Name: paymentemail
+- Data Type: free
+- Default Value: 
+[/segment]

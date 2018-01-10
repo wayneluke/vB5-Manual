@@ -6,10 +6,10 @@ require_once('./includes/functions.php');
 
 // Misc. Settings. These probably do not need to be changed.
 //$outDir='../pages/20.vbulletin_5.3.0/06.admin_control_panel/02.settings/01.options';
-$outDir="./output";
+
 $separator=DIRECTORY_SEPARATOR;
 $templateTokens=['~title~','~title_slug~','~date~','~group~','~version~','~content~'];
-$contentTokens=['~title','~image~','~description~','~help~','~additionalinfo~','~varname~','~type~','~defaultvalue~'];
+$contentTokens=['~title~','~image~','~description~','~help~','~additionalinfo~','~varname~','~type~','~defaultvalue~'];
 $imageTokens=['~imageurl~','~caption~'];
 
 // Setup Necessary Queries.
@@ -40,9 +40,11 @@ $groups = $dbConnect->run_query($query['groups']);
 
 $itemReplace=[];
 $currentItem='';
-// $outDir .= $outDir . $separator . '06.admin_control_panel/02.settings/01.options';
-$outDir = $outDir . $separator . 'options';
+$outDir = $outDir . $separator . '\02.settings\01.options';
 foreach ($groups as $group) {
+    if ($group['displayorder']==0){
+        continue;
+    }
     echo $group['title'] . "\n\r";
     $settings = $dbConnect->run_query($query['settings'],[$group['grouptitle']]);
     $content='';

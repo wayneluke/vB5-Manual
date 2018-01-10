@@ -53,7 +53,6 @@ table.comparison-chart {
 .comparison-chart .fa-check {
     color: #1694CA;
 }
-
 .comparison-chart .fa-times {
     color: rgb(202, 22, 22);
 }
@@ -81,10 +80,15 @@ ol > li {
     margin-bottom: 10px;
     margin-right:25px;
 }
-section.variable h2 {
+section.variable h2,section.option h2 {
     font-size: 16pt;
     font-weight: bold;
+    margin-bottom: 0.3rem;
 }
+
+section.variable p,section.option p{
+    margin-top: 0px;
+}    
 ol > li::before {
     content: counter(step-counter);
     margin-right: 15px;

@@ -9,18 +9,39 @@ taxonomy:
         - notification
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Dismissed Notification Auto Delete
 Dismissed notifications will automatically be deleted this many days after they have been dismissed. This does not affect new notifications. Set to (0) to disable this functionality.
 
-## New Notification Auto Delete
+
+
+- Variable Name: dismissed_notification_ttl_days
+- Data Type: integer
+- Default Value: 180
+[/segment][segment=option]
+
+## New Notification Auto Delete
 New notifications will automatically be deleted this many days after they were created. This does not affect dismissed notifications. Set to (0) to disable this functionality.
 
-## Enable Usermention Notifications
+
+
+- Variable Name: new_notification_ttl_days
+- Data Type: integer
+- Default Value: 0
+[/segment][segment=option]
+
+## Enable Usermention Notifications
 If this is disabled, usermentions will not send notifications. This does not affect the use of the [USER] BBCode.
 
-
 
+
+- Variable Name: notification_usermention_enabled
+- Data Type: boolean
+- Default Value: 1
+[/segment]

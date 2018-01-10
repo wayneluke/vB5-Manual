@@ -9,14 +9,24 @@ taxonomy:
         - banning
 visible: false
 template: article
-version: 5.3.3
-date: 12/06/2017 11:16pm
+version: 5.4.0 Alpha 1
+date: 1/10/2018 12:19am
 ---
+
+[toc]
+[segment=option]
 
 ## Enable Banning Options
 Banning allows you to stop certain IP addresses and email addresses from registering and posting to the forum.
 
-## Banned IP Addresses
+
+
+- Variable Name: enablebanning
+- Data Type: boolean
+- Default Value: 1
+[/segment][segment=option]
+
+## Banned IP Addresses
 Use this option to prevent certain IP addresses from accessing any part of your board.<br />
 <br />
 If you enter a complete IP address (242.21.11.7), only that IP will be banned.<br />
@@ -26,7 +36,14 @@ You may also use an '*' as a wildcard for increased flexibility. For example, if
 <br />
 Place a space or a line break between each IP address.
 
-## Banned Email Addresses
+
+
+- Variable Name: banip
+- Data Type: free
+- Default Value: 
+[/segment][segment=option]
+
+## Banned Email Addresses
 Email address ban lists: You may ban any email addresses from registering and posting. Type in the complete email address (user@example.com), or use a partial email address (as in @example.com).<br />
 <br />
 Note that partial email addresses are matched from the <em>end</em> of the address unless you enable 'Aggressive Email Banning' below. Therefore if you ban @example.com you will ban user@example.com, but if you ban @example that user will <em>not</em> be banned. If you enable 'Aggressive Email Banning', user@example.com would be banned by @example.<br />
@@ -35,19 +52,44 @@ If the email address of a user attempting to register or change their email addr
 <br />
 Put a space between each email address or email address fragment.
 
-## Aggressive Email Banning
+
+
+- Variable Name: banemail
+- Data Type: free
+- Default Value: 
+[/segment][segment=option]
+
+## Aggressive Email Banning
 If this option is enabled, when checking for banned emails, incomplete addresses are matched anywhere in the email address, not just the end.<br />
 <br />
 For example, if this option is enabled 'yahoo' will block any email address with 'yahoo' in it. If this option is disabled, no emails will be banned unless the ban was changed to 'yahoo.com'.
 
-## Allow User to Keep Banned Email Addresses
+
+
+- Variable Name: aggressiveemailban
+- Data Type: boolean
+- Default Value: 0
+[/segment][segment=option]
+
+## Allow User to Keep Banned Email Addresses
 If you ban an email address and a user already uses that address, a problem will occur. Using this option, you can specify whether the user will have to enter a new email address in their profile when they next modify their email address, or whether the user can just keep the email address which you have banned.
 
-## Global Ignore
+
+
+- Variable Name: allowkeepbannedemail
+- Data Type: boolean
+- Default Value: 1
+[/segment][segment=option]
+
+## Global Ignore
 This option allows you to effectively add a user or users to every member's 'Ignore List'. However, users in this list can still see their own posts and topics...<br />
 <br />
 Enter a list of userid numbers, separated by spaces (for example: 4 12 68 102).<br />
 <br />If you change this option, you need to rebuild topic and then forum information <a href="admincp/misc.php">here</a>.
 
-
 
+
+- Variable Name: globalignore
+- Data Type: free
+- Default Value: 
+[/segment]
