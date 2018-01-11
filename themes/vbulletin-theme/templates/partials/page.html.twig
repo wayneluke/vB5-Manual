@@ -4,7 +4,11 @@
 	{{ printfriendly(page.route) }} - Reading Time: {{ page.content|readingtime }} 
 	{{ page.content }}
 
-	Last Modified: {{ page.modified()|date("m/d/Y") }}
+{% if page.header.embed %}
+	<iframe src="{{ page.url(true) }}/{{ page.header.embed }}" style="width:95%; height:900px; margin:auto;" frameborder="0"></iframe>
+{% endif %}	
+
+	<p>Last Modified: {{ page.modified()|date("m/d/Y") }}</p>
 	{% include 'partials/comments.html.twig' with {'page': page} %}
 </div>
 </div>
