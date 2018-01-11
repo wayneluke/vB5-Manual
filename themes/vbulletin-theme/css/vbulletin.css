@@ -17,7 +17,11 @@ h2 {
 h3 {
    letter-spacing: -1px; }
 
-#chapter {
+#sidebar ul li > a .redirect {
+    color: #1694CA;
+    display: inline; }
+
+    #chapter {
     display: flex;
     align-items: center;
     justify-content: center;
