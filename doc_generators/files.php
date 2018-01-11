@@ -1,4 +1,5 @@
 <?php
+// https://www.geekality.net/2014/04/20/php-simple-directory-recursion/
 
 // This should return false if there is something you want excluded
 function filter($file, $key, $iterator)
