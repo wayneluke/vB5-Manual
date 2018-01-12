@@ -22,16 +22,22 @@ $it = new RecursiveIteratorIterator($it, RecursiveIteratorIterator::SELF_FIRST);
 $path='';
 echo '# vBulletin 5 Connect File List' . PHP_EOL . 'MD Files with less than 200 bytes should be considered incomplete.' . PHP_EOL . PHP_EOL;
 
+$dirCount =0;
+$fileCount =0;
 foreach($it as $file)
 {
     if ($file->isdir()) {
         $path = $file->getBasename();
+        $dirCount++;
     } else {
         $path = $file->getFilename();
         $size = $file->getSize();
+        $fileCount++;
     }
     $size = (isset($size) AND $size > 0) ? " (" . $size . " bytes)" : "";
     echo str_repeat("\t", $it->getDepth()) . '- ' . $path . $size . PHP_EOL;
 }
 
-echo PHP_EOL . PHP_EOL . 'Updated at: ' . date('n/d/Y h:ia');
+echo PHP_EOL . PHP_EOL;
+echo 'Total Directories: ' . $dirCount . ' / Total Files: ' . $fileCount . PHP_EOL;
+echo 'Updated at: ' . date('n/d/Y h:ia') . PHP_EOL;
