@@ -2,6 +2,8 @@
 // https://www.geekality.net/2014/04/20/php-simple-directory-recursion/
 
 $root='C:\wamp64\www\vbulletin\manual\user\pages';
+date_default_timezone_set ('America/Los_Angeles');
+
 // This should return false if there is something you want excluded
 function filter($file, $key, $iterator)
 {
@@ -18,6 +20,8 @@ $it = new RecursiveIteratorIterator($it, RecursiveIteratorIterator::SELF_FIRST);
 
 // And then just loop :)
 $path='';
+echo '# vBulletin 5 Connect File List' . PHP_EOL . 'MD Files with less than 200 bytes should be considered incomplete.' . PHP_EOL . PHP_EOL;
+
 foreach($it as $file)
 {
     if ($file->isdir()) {
@@ -27,9 +31,7 @@ foreach($it as $file)
         $size = $file->getSize();
     }
     $size = (isset($size) AND $size > 0) ? " (" . $size . " bytes)" : "";
-    echo str_repeat("\t", $it->getDepth())
-        . '- '
-        . $path
-        . $size
-        . PHP_EOL;
+    echo str_repeat("\t", $it->getDepth()) . '- ' . $path . $size . PHP_EOL;
 }
+
+echo PHP_EOL . PHP_EOL . 'Updated at: ' . date('n/d/Y h:ia');

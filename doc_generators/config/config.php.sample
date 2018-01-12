@@ -16,3 +16,5 @@ $outDir="./output";
 $separator=DIRECTORY_SEPARATOR;
 
 $xmlDir ="C:\wamp64\www\vbulletin\vb5_manual\core\includes\xml";
+
+date_default_timezone_set ('America/Los_Angeles');
