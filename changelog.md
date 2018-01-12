@@ -9,6 +9,13 @@ Release versions are tied to the vBulletin 5 Connect version followed by the yea
     - New Document Generators.
 
 ## January 2018
+### January 12
+- Total Articles: 237
+- Updated Setting and Stylevar articles
+- Updated Numerous AdminCP Articles
+- Updated Upgrade Articles
+- Added File Map
+- Added [segment] shortcode. 
 ### January 3
 - Preparation for new Milestone.
 - Add Grav's blueprints.yaml configuration file for this project
