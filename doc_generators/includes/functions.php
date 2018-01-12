@@ -32,10 +32,10 @@ function slugify($string='')
     $string=preg_replace('/[^A-Za-z0-9-]+/', ' ', $string);
     $string=trim($string);
     $string=preg_replace('/[^A-Za-z0-9-]+/','_', $string); 
-    $slug=strtolower($string);
-    return $slug;
+    $string=strtolower($string);
+    return $string;
 }
 
-function unslugify($string="") {
-    
+function unslugify($string='') {
+    return ucwords(str_replace('_',' ',$string));
 }

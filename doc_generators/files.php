@@ -1,6 +1,7 @@
 <?php
 // https://www.geekality.net/2014/04/20/php-simple-directory-recursion/
 
+$root='C:\wamp64\www\vbulletin\manual\user\pages';
 // This should return false if there is something you want excluded
 function filter($file, $key, $iterator)
 {
@@ -23,9 +24,12 @@ foreach($it as $file)
         $path = $file->getBasename();
     } else {
         $path = $file->getFilename();
+        $size = $file->getSize();
     }
+    $size = (isset($size) AND $size > 0) ? " (" . $size . " bytes)" : "";
     echo str_repeat("\t", $it->getDepth())
         . '- '
         . $path
+        . $size
         . PHP_EOL;
 }
