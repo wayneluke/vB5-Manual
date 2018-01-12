@@ -39,5 +39,6 @@ foreach($it as $file)
 }
 
 echo PHP_EOL . PHP_EOL;
-echo 'Total Directories: ' . $dirCount . ' / Total Files: ' . $fileCount . PHP_EOL;
+echo 'Total Directories: ' . $dirCount . ' / Total Files: ' . $fileCount;
+echo PHP_EOL . PHP_EOL;
 echo 'Updated at: ' . date('n/d/Y h:ia') . PHP_EOL;
