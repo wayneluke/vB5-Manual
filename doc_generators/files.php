@@ -33,18 +33,21 @@ foreach($it as $file)
         $path = $file->getBasename();
         $dirCount++;
     } else {
-        $path = $file->getFilename();
-        if ($file->getExtension() === 'md') {
+        if ($file->getExtension() == 'md') {
+            $path = $file->getFilename();
             $size = $file->getSize();
             $size = (isset($size) AND $size > 100) ? " (" . $size . " bytes)" : "";
             $complete = $size !== "" ? "[x]":"[ ]";
-        }            
-        $fileCount++;
+            $fileCount++;
+        } else {
+            continue;
+        }           
+       
     }
     echo str_repeat("\t", $it->getDepth()) . '- ' . $complete . ' ' . $path . $size . PHP_EOL;
 }
 
 echo PHP_EOL . PHP_EOL;
-echo 'Total Directories: ' . $dirCount . ' / Total Files: ' . $fileCount;
+echo 'Total Directories: ' . $dirCount . ' / Total Articles: ' . $fileCount;
 echo PHP_EOL . PHP_EOL;
 echo 'Updated at: ' . date('n/d/Y h:ia') . PHP_EOL;
