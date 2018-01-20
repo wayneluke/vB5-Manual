@@ -26,16 +26,22 @@ $dirCount =0;
 $fileCount =0;
 foreach($it as $file)
 {
+    $size ="";
+    $complete= '[x]';
+
     if ($file->isdir()) {
         $path = $file->getBasename();
         $dirCount++;
     } else {
         $path = $file->getFilename();
-        $size = $file->getSize();
+        if ($file->getExtension() === 'md') {
+            $size = $file->getSize();
+            $size = (isset($size) AND $size > 100) ? " (" . $size . " bytes)" : "";
+            $complete = $size !== "" ? "[x]":"[ ]";
+        }            
         $fileCount++;
     }
-    $size = (isset($size) AND $size > 0) ? " (" . $size . " bytes)" : "";
-    echo str_repeat("\t", $it->getDepth()) . '- ' . $path . $size . PHP_EOL;
+    echo str_repeat("\t", $it->getDepth()) . '- ' . $complete . ' ' . $path . $size . PHP_EOL;
 }
 
 echo PHP_EOL . PHP_EOL;

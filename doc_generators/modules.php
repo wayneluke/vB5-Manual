@@ -1,6 +1,7 @@
 <?php
 require_once('./config/config.php');
 require_once('./includes/database.php');
+require_once('./includes/queries.php');
 require_once('./includes/template.php');
 require_once('./includes/functions.php');
 
