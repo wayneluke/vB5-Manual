@@ -55,7 +55,7 @@ foreach ($groups as $group) {
         $content.=$currentItem->parse($contentTokens,$itemReplace);
     }
     $groupDir = $outDir . $separator . $group['displayorder'] . '.' . $group['grouptitle'];
-    create_directory($groupDir);
+    createDirectory($groupDir);
     $templateReplace=[$group['title'], slugify($group['title']), $now, $group['grouptitle'], $curVersion, $content];
 
     $settingPage = new Template('settingPage.inc');

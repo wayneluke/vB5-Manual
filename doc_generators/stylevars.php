@@ -72,7 +72,7 @@ foreach ($groups as $group) {
         $content.=$currentItem->parse($contentTokens,$itemReplace) . "\n";
     }
     $groupDir = $outDir . $separator . ++$pageCounter . '.' . $group['stylevargroup'];
-    create_directory($groupDir);
+    createDirectory($groupDir);
     $templateReplace=[$group['stylevargroup'], slugify($group['stylevargroup']), $now, $group['stylevargroup'], $curVersion, $content];
 
     $stylevarPage = new Template('stylevarPage.inc');

@@ -1,7 +1,7 @@
 <?php
 require_once('./config/config.php');
 require_once('./includes/database.php');
-require_once('./includes/queries.php');
+require_once('./includes/querydef.php');
 require_once('./includes/template.php');
 require_once('./includes/functions.php');
 
@@ -10,14 +10,13 @@ $templateTokens=['~title~','~title_slug~','~date~','~group~','~version~','~conte
 $contentTokens=['~title~','~image~','~description~','~help~','~additionalinfo~','~varname~','~type~','~defaultvalue~'];
 $imageTokens=['~imageurl~','~caption~'];
 
-// Setup Necessary Queries.
-$query =[
-    'version'   => "select value from setting where varname='templateversion'",
-    'groups'    => "",
-    'permissions' => "", 
-];
+// output directory - No Trailing Slash -- Should be moved to config eventually.
+$outDir = './output/modules';
 
-$bitfields=(array) simplexml_load_string($xmldir . "vbulletin_bitfield.xml");
+// Setup Necessary Queries.
+$queries = new QueryDefs();
+
+$moduleQueries = $queries->getQueries('modules');
 
 $dbConnect = new Database($dbHost,$dbName,$dbUser,$dbPass);
 
@@ -25,15 +24,26 @@ if (!empty($dbConnect)) {
     echo "Database Connection Successful\n\r";
 }
 
-$version = $dbConnect->run_query($query['version']);
-$curVersion = $version->fetchColumn();
+ob_start();
+$version = $queries->getVersion($dbConnect);
 $now=date('n/d/Y h:ia');
 
-$groups = $dbConnect->run_query($query['groups']);
+$categories = $dbConnect->run_query($moduleQueries['categories']);
 
-$itemReplace=[];
-$currentItem='';
+foreach ($categories as $category) {
+    //Skip Abstract Category for now.
+    if ($category['category'] === 'Abstract') {continue;}
 
-$outDir = $outDir . $separator . 'permissions';
-$pageCounter=0;
+    echo '# ' . $category['category'] . PHP_EOL;
+    $modules = $dbConnect->run_query($moduleQueries['widget'],[$category['category']]);
+    foreach ($modules as $module)
+    {
+        print_r($module);
+    }
+}    
 
+echo $version . PHP_EOL;
+
+$fileTxt = ob_get_clean();
+
+writeFile($outDir,'chapter.md',$fileTxt);

@@ -2,17 +2,18 @@
 
 // Miscellaneous Functions
 
-function delete_directory($dirname) {
-    if (is_dir($dirname))
-        $dir_handle = opendir($dirname);
+function deleteDirectory($dirName) 
+{
+    if (is_dir($dirName))
+        $dir_handle = opendir($dirName);
     if (!$dir_handle)
         return false;
     while($file = readdir($dir_handle)) {
         if ($file != "." && $file != "..") {
-            if (!is_dir($dirname."/".$file))
-                unlink($dirname."/".$file);
+            if (!is_dir($dirName."/".$file))
+                unlink($dirName."/".$file);
             else
-                delete_directory($dirname.'/'.$file);
+                delete_directory($dirName.'/'.$file);
         }
     }
     closedir($dir_handle);
@@ -20,10 +21,14 @@ function delete_directory($dirname) {
     return true;
 }
 
-function create_directory($dirname) {
-    if (!file_exists($dirname)) {
-        mkdir($dirname, 0777, true);
+function createDirectory($dirName) 
+{
+    if (!file_exists($dirName)) {
+        if (!mkdir($dirName, 0777, true)) {
+            die ('Unable to create directory - ' .$dirName);
+        }
     }
+    return true;
 }
 
 function slugify($string='')
@@ -34,8 +39,18 @@ function slugify($string='')
     $string=preg_replace('/[^A-Za-z0-9-]+/','_', $string); 
     $string=strtolower($string);
     return $string;
+    
 }
 
 function unslugify($string='') {
     return ucwords(str_replace('_',' ',$string));
+}
+
+function writeFile (string $outDir, string $fileName, string $fileTxt) {
+    if (!is_dir($outDir)) {
+        // dir doesn't exist, make it
+        createDirectory($outDir);
+      }
+      echo 'Creating ' . $fileName . 'file. ' . PHP_EOL;
+      file_put_contents($outDir.'/'.$fileName,$fileTxt);  
 }
