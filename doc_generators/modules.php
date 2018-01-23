@@ -38,6 +38,11 @@ foreach ($categories as $category) {
     $modules = $dbConnect->run_query($moduleQueries['widget'],[$category['category']]);
     foreach ($modules as $module)
     {
+        if ($module['titlephrase'] !== null) {
+            $module['title'] = $dbConnect->run_query($moduleQueries['titlephrase'],[$module['widgetid']])->fetchColumn();
+        } else {
+            $module['title'] = $dbConnect->run_query($moduleQueries['templatephrase'],[$module['widgetid']])->fetchColumn();
+        }
         print_r($module);
     }
 }    

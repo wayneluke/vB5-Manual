@@ -51,6 +51,6 @@ function writeFile (string $outDir, string $fileName, string $fileTxt) {
         // dir doesn't exist, make it
         createDirectory($outDir);
       }
-      echo 'Creating ' . $fileName . 'file. ' . PHP_EOL;
+      echo 'Creating ' . $fileName . ' file. ' . PHP_EOL;
       file_put_contents($outDir.'/'.$fileName,$fileTxt);  
 }
