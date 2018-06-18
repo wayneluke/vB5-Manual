@@ -15,6 +15,9 @@ There may be times in vBulletin where you’ll be required to edit or make chang
 [*Microsoft Visual Studio Code*](https://code.visualstudio.com/) - [fa=windows] [fa=apple] [fa=linux]
 :   This is a robust text editor with many extensions and color themes available. It uses the Electron platform as its base and is available for Windows, Mac OS, and Linux.
 
+[*Atom*](https://atom.io/) - [fa=windows] [fa=apple] [fa=linux]
+:   Atom is the editor of GitHub. Built on Electron, it is customizable and full featured.
+
 [*Sublime Text 2*](http://www.sublimetext.com/) - [fa=windows] [fa=apple] [fa=linux] [fa=usd]
 :   Sublime Text is a sophisticated text editor for code, markup and prose. 
 
@@ -76,7 +79,7 @@ vBulletin stores all of its data in a MySQL or MariaDB database. Being able to a
 ## Remote Access GUI
 Sometimes, support will need to connect to your server. If you cannot make server access available via SSH or SFTP, then one of these methods may be used.
 
-Windows Remote Desktop - [fa=windows] 
+[*Windows Remote Desktop*](https://www.microsoft.com/en-us/p/microsoft-remote-desktop/9wzdncrfj3ps) - [fa=windows] 
 :   Feature available to Windows Professional, Enterprise and Server versions. Allows direct connection and control over other machines. 
 
 [*TeamViewer*](https://www.teamviewer.com/en/) - [fa=windows] [fa=apple] [fa=linux] [fa=usd]
