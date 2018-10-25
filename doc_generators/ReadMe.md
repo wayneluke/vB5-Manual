@@ -1,5 +1,7 @@
 # vBulletin Document Generators
 
+![Menu Output](./menu.png)
+
 > **Important**: Use a clean vBulletin Install to generate these files. If your installation 
 > has additional content, it will corrupt the documentation.
 
@@ -22,7 +24,7 @@ future generations.
 ## Available Generators
 
 - Settings (options.php): Generates an article page for each Setting Group in the system. 
-Inside the page, each setting is documented with examples. Groups and Options will be 
+nside the page, each setting is documented with examples. Groups and Options will be 
 listed by display value in the manual.
 
 - Style Variables (stylevars.php): Generates an article page for each Stylevar group in 
