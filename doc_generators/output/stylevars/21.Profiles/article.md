@@ -9,558 +9,395 @@ taxonomy:
         - Profiles
 visible: false
 template: article
-version: 5.3.4
-date: 12/15/2017 01:24am
+version: 5.4.5 Alpha 4
+date: 10/15/2018 12:59pm
 ---
 
-<section class='option'>
 
-**
 
+[toc]
 
+## Profile Navbar Secondary Button Background
 
-
-- Variable Name: profcustom_navbar_background_active
-- Data Type: background
-- Default Value: 
-	- units: 
-	- color: #FFFFFF
-	- image: 
-	- repeat: 
-	- x: 0
-	- y: 0
-
-
-</section>
-<section class='option'>
-
-**
-
-
-
-
-- Variable Name: profcustom_navbar_background
-- Data Type: background
-- Default Value: 
-	- units: 
-	- color: #F9F9F9
-	- image: 
-	- repeat: 
-	- x: 0
-	- y: 0
-
-
-</section>
-<section class='option'>
-
-**
-
-
-
-
-- Variable Name: profcustom_navbar_border_active
-- Data Type: border
-- Default Value: 
-	- units: px
-	- width: 1
-	- style: solid
-	- color: #BFC5C9
-
-
-</section>
-<section class='option'>
-
-**
-
-
-
-
-- Variable Name: profcustom_navbar_border
-- Data Type: border
-- Default Value: 
-	- units: px
-	- width: 1
-	- style: solid
-	- color: #C9CED2
-
-
-</section>
-<section class='option'>
-
-**
-
-
-
-
-- Variable Name: profcustom_navbar_text_color_active
-- Data Type: color
-- Default Value: 
-	- color: #343A3D
-
-
-</section>
-<section class='option'>
-
-**
-
-
-
-
-- Variable Name: profcustom_navbar_text_color
-- Data Type: color
-- Default Value: 
-	- color: #838789
-
-
-</section>
-<section class='option'>
-
-**
-
-
-
-
-- Variable Name: profcustom_navbar_toolbar_text_color
-- Data Type: color
-- Default Value: 
-	- color: #09161B
-
-
-</section>
-<section class='option'>
-
-*Profile Navbar Button Background*
-
-
-
-
-- Variable Name: profcustom_navbarbutton_background
-- Data Type: background
-- Default Value: 
-	- units: 
-	- color: #BFC5C9
-	- image: 
-	- repeat: 
-	- x: 
-	- y: 
-
-
-</section>
-<section class='option'>
-
-*Profile Navbar Button Border*
-
-
-
-
-- Variable Name: profcustom_navbarbutton_border
-- Data Type: color
-- Default Value: 
-	- color: #BFC5C9
-
-
-</section>
-<section class='option'>
-
-*Profile Navbar Button Text Color*
-
-
-
-
-- Variable Name: profcustom_navbarbutton_color
-- Data Type: color
-- Default Value: 
-	- color: #343A3d
-
-
-</section>
-<section class='option'>
-
-*Profile Navbar Secondary Button Background*
-
-
-
+Controls the background color and image for the profile navigation bar secondary buttons.
 
 - Variable Name: profcustom_navbarbuttonsecondary_background
 - Data Type: background
-- Default Value: 
-	- units: 
-	- color: #FBFBFB
-	- image: url("images/css/sprite_gradients_vb.png")
-	- repeat: repeat-x
-	- x: 0
-	- y: -550
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n  - gradient_type: linear-gradient
+  - gradient_direction: to bottom
+  - gradient_start_color: rgba(255, 255, 255, 0.01)
+  - gradient_end_color: rgba(0, 0, 0, 0.10)
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-*Profile Navbar Secondary Button Border*
-
+## Profile Navbar Secondary Button Border
 
 
 
 - Variable Name: profcustom_navbarbuttonsecondary_border
 - Data Type: color
-- Default Value: 
-	- color: #BFC5C9
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*Profile Navbar Secondary Button Text Color*
-
+## Profile Navbar Secondary Button Text Color
 
 
 
 - Variable Name: profcustom_navbarbuttonsecondary_color
 - Data Type: color
-- Default Value: 
-	- color: #343A3d
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*Profile Button Primary Background*
-Background for button in profile content area
+## Profile Navbar Button Background
 
 
 
-- Variable Name: profile_button_primary_background
+- Variable Name: profcustom_navbarbutton_background
 - Data Type: background
-- Default Value: 
-	- units: 
-	- color: #2989CC
-	- image: url("images/css/sprite_gradients_vb.png") 100%
-	- repeat: repeat-x
-	- x: 
-	- y: -500px
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*Profile Secondary Button Background*
-Background for button in profile content area
+## Profile Navbar Button Border
 
 
 
-- Variable Name: profile_button_secondary_background
+- Variable Name: profcustom_navbarbutton_border
+- Data Type: color
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## Profile Navbar Button Text Color
+
+
+
+- Variable Name: profcustom_navbarbutton_color
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## profcustom_navbar_background
+
+
+
+- Variable Name: profcustom_navbar_background
 - Data Type: background
-- Default Value: 
-	- units: 
-	- color: #BFC5C9
-	- image: url("images/css/sprite_gradients_vb.png") 100%
-	- repeat: repeat-x
-	- x: 
-	- y: -550px
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n  - x: 0
+  - y: 0
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-*Profile Content Background*
+## profcustom_navbar_background_active
 
 
 
-
-- Variable Name: profile_content_background
+- Variable Name: profcustom_navbar_background_active
 - Data Type: background
-- Default Value: 
-	- units: 
-	- color: #FFFFFF
-	- image: 
-	- repeat: 
-	- x: 
-	- y: 
+- Default Value(s):
+color[global_palette_fill_01 **(Inherited)**](/output/stylevars/Profiles)\n  - x: 0
+  - y: 0
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-*Profile Content Border Color*
+## profcustom_navbar_border
 
 
 
-
-- Variable Name: profile_content_border
-- Data Type: color
-- Default Value: 
-	- color: #C8CCCE
-
-
-</section>
-<section class='option'>
-
-*Profile Content Link Text Color*
-
-
-
-
-- Variable Name: profile_content_linktext
-- Data Type: color
-- Default Value: 
-	- color: #2379B5
-
-
-</section>
-<section class='option'>
-
-*Profile Content Primary Text Color*
-
-
-
-
-- Variable Name: profile_content_primarytext
-- Data Type: color
-- Default Value: 
-	- color: #252C2F
-
-
-</section>
-<section class='option'>
-
-*Profile Content Secondary Text Color*
-
-
-
-
-- Variable Name: profile_content_secondarytext
-- Data Type: color
-- Default Value: 
-	- color: #6A6A6A
-
-
-</section>
-<section class='option'>
-
-*Profile section border*
-
-
-
-
-- Variable Name: profile_section_border
+- Variable Name: profcustom_navbar_border
 - Data Type: border
-- Default Value: 
-	- units: px
-	- width: 1
-	- style: solid
-	- color: #CACED2
+- Default Value(s):
+  - units: px
+  - width: 1
+  - style: solid
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*User settings tab highlight*
-Controls the border width, style, and color for the tabs in the user settings.
+## profcustom_navbar_border_active
 
 
 
-- Variable Name: profile_settings_tab_highlight
+- Variable Name: profcustom_navbar_border_active
 - Data Type: border
-- Default Value: 
-	- units: px
-	- width: 4
-	- style: solid
-	- color: #2379B5
+- Default Value(s):
+  - units: px
+  - width: 1
+  - style: solid
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*Profile Userpanel Font*
-Controls the font family, size, and style for the profile user panel.
+## profcustom_navbar_text_color
 
 
 
-- Variable Name: profile_userpanel_font
-- Data Type: font
-- Default Value: 
-	- units: 
-	- family: Helvetica,Arial,Verdana,sans-serif
-	- size: 0
-	- weight: 
-	- style: 
-	- variant: 
-
-
-</section>
-<section class='option'>
-
-*Profile User Panel Text Color*
-
-
-
-
-- Variable Name: profile_userpanel_textcolor
+- Variable Name: profcustom_navbar_text_color
 - Data Type: color
-- Default Value: 
-	- color: #09161b
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*Profile Sidebar Button Background*
+## profcustom_navbar_text_color_active
 
 
 
+- Variable Name: profcustom_navbar_text_color_active
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## profcustom_navbar_toolbar_text_color
+
+
+
+- Variable Name: profcustom_navbar_toolbar_text_color
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## Profile Sidebar Button Background
+
+Controls the background color and image for the buttons in the profile sidebar.
 
 - Variable Name: profilesidebar_button_background
 - Data Type: background
-- Default Value: 
-	- units: 
-	- color: #2989CC
-	- image: url("images/css/sprite_gradients_vb.png") 100%
-	- repeat: repeat-x
-	- x: 
-	- y: -500px
+- Default Value(s):
+color[global_palette_accent_02 **(Inherited)**](/output/stylevars/Profiles)\n  - gradient_type: linear-gradient
+  - gradient_direction: to bottom
+  - gradient_start_color: rgba(255, 255, 255, 0)
+  - gradient_end_color: rgba(40, 50, 60, 0.35) 20px
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-*Profile Sidebar Button Border Color*
-
+## Profile Sidebar Button Border Color
 
 
 
 - Variable Name: profilesidebar_button_border
 - Data Type: border
-- Default Value: 
-	- units: px
-	- width: 1
-	- style: solid
-	- color: #2989CC
+- Default Value(s):
+  - units: px
+  - width: 1
+  - style: solid
+color[global_palette_accent_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
+## Profile Sidebar Button Text Color
 
-*Profile Sidebar Button Text Color*
 FFFFFF
-
-
 
 - Variable Name: profilesidebar_button_text_color
 - Data Type: color
-- Default Value: 
-	- color: #FFFFFF
+- Default Value(s):
+color[global_palette_text_03 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-*Profile Sidebar Count Text Color*
-
+## Profile Sidebar Count Text Color
 
 
 
 - Variable Name: profilesidebar_count_text_color
 - Data Type: color
-- Default Value: 
-	- color: #2989CC
+- Default Value(s):
+color[global_palette_text_04 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
+## Profile Button Primary Background
 
-**
+Controls the background color and image for the primary buttons in profile content area.
 
+- Variable Name: profile_button_primary_background
+- Data Type: background
+- Default Value(s):
+color[global_palette_accent_02 **(Inherited)**](/output/stylevars/Profiles)\n  - gradient_type: linear-gradient
+  - gradient_direction: to bottom
+  - gradient_start_color: rgba(255, 255, 255, 0)
+  - gradient_end_color: rgba(40, 50, 60, 0.35) 20px
+
+- Template List: css_profile.css
+
+## Profile Secondary Button Background
+
+Controls the background color and image for the secondary buttons in profile content area.
+
+- Variable Name: profile_button_secondary_background
+- Data Type: background
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n  - gradient_type: linear-gradient
+  - gradient_direction: to bottom
+  - gradient_start_color: rgba(255, 255, 255, 0.01)
+  - gradient_end_color: rgba(0, 0, 0, 0.10)
+
+- Template List: css_profile.css
+
+## Profile Content Background
+
+
+
+- Variable Name: profile_content_background
+- Data Type: background
+- Default Value(s):
+color[global_palette_fill_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## Profile Content Border Color
+
+
+
+- Variable Name: profile_content_border
+- Data Type: color
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## profile_content_divider_border
 
 
 
 - Variable Name: profile_content_divider_border
 - Data Type: color
-- Default Value: 
-	- color: #B7BCBE
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
-
-**
-
+## profile_content_font
 
 
 
 - Variable Name: profile_content_font
 - Data Type: font
-- Default Value: 
-	- units: %
-	- family: inherit
-	- size: 100
-	- weight: 
-	- style: 
-	- variant: 
+- Default Value(s):
+  - units: %
+  - family: inherit
+  - size: 100
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-**
+## Profile Content Link Text Color
 
+
+
+- Variable Name: profile_content_linktext
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_04 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## Profile Content Primary Text Color
+
+
+
+- Variable Name: profile_content_primarytext
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## Profile Content Secondary Text Color
+
+
+
+- Variable Name: profile_content_secondarytext
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## profile_section_background
 
 
 
 - Variable Name: profile_section_background
 - Data Type: background
-- Default Value: 
-	- units: 
-	- color: #F4F4F4
-	- image: 
-	- repeat: 
-	- x: 
-	- y: 
+- Default Value(s):
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
-<section class='option'>
+## Profile section border
 
-**
 
+
+- Variable Name: profile_section_border
+- Data Type: border
+- Default Value(s):
+  - units: px
+  - width: 1
+  - style: solid
+color[global_palette_fill_02 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+
+## profile_section_font
 
 
 
 - Variable Name: profile_section_font
 - Data Type: font
-- Default Value: 
-	- units: %
-	- family: inherit
-	- size: 100
-	- weight: 
-	- style: 
-	- variant: 
+- Default Value(s):
+  - units: %
+  - family: inherit
+  - size: 100
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-**
-
+## profile_section_text_color
 
 
 
 - Variable Name: profile_section_text_color
 - Data Type: color
-- Default Value: 
-	- color: inherit
+- Default Value(s):
+  - color: inherit [swatch=inherit]  [/swatch]
 
-
-</section>
-<section class='option'>
+- Template List: css_profile.css
 
-**
+## User settings tab highlight
 
+Controls the border width, style, and color for the tabs in the user settings.
+
+- Variable Name: profile_settings_tab_highlight
+- Data Type: border
+- Default Value(s):
+  - units: px
+  - width: 4
+  - style: solid
+color[global_palette_text_04 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_b_tabbed_pane.css
+
+## Profile Userpanel Font
+
+Controls the font family, size, and style for the profile user panel.
+
+- Variable Name: profile_userpanel_font
+- Data Type: font
+- Default Value(s):
+  - family: Helvetica,Arial,Verdana,sans-serif
+  - size: 0
+
+- Template List: css_profile.css
+
+## profile_userpanel_linkcolor
 
 
 
 - Variable Name: profile_userpanel_linkcolor
 - Data Type: color
-- Default Value: 
-	- color: #2989CC
+- Default Value(s):
+color[global_palette_text_04 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
 
-
-</section>
+## Profile User Panel Text Color
+
+
+
+- Variable Name: profile_userpanel_textcolor
+- Data Type: color
+- Default Value(s):
+color[global_palette_text_01 **(Inherited)**](/output/stylevars/Profiles)\n
+- Template List: css_profile.css
+

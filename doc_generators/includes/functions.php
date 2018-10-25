@@ -2,6 +2,12 @@
 
 // Miscellaneous Functions
 
+function isCLI()
+{
+    return (php_sapi_name() === 'cli');
+}
+
+
 function deleteDirectory($dirName) 
 {
     if (is_dir($dirName))

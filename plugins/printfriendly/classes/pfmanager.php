@@ -160,9 +160,7 @@ class PFManager
             }
         }
         $stripped_html = strip_tags( $html_from_template, $allow );
-        
-        $html_utf8_decode = utf8_decode( $stripped_html );
-        $html_base64_encode = base64_encode( $html_utf8_decode );
+        $html_base64_encode = base64_encode( $stripped_html );
 
         $ret_value = array();
         $ret_value['title'] = $title;

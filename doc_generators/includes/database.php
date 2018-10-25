@@ -24,9 +24,9 @@ class Database extends PDO
     public function __construct($host, $dbname, $username = NULL, $password = NULL, $options = [])
     {
         $default_options = [
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_EMULATE_PREPARES => false,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_ERRMODE               => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE    => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES      => false,
         ];
         $options = array_replace($default_options, $options);
         $dsn = 'mysql:host='.$host.';dbname='.$dbname;
@@ -39,11 +39,13 @@ class Database extends PDO
      * Wrapper to run a query that will return many results.
      * 
      * @param string $sql The SQL Query to run including placeholders for bound parameters.
+     * @param string $prefix The Table Prefix used in vBulletin's database.
      * @param array $args An array of values to be used for parameters in the query.
      * @return $stmt object holding the query results as an associative array.
      */
-    public function run_query($sql, $args = NULL)
+    public function run_query($sql, $prefix, $args = NULL)
     {
+        $sql = str_replace("{TABLE_PREFIX}", $prefix, $sql);
         if (!$args)
         {
              return $this->query($sql);
@@ -62,9 +64,9 @@ class Database extends PDO
      * @param array $args An array of values to be used for parameters in the query.
      * @return The result of the query in an array.
      */
-    public function fetch_query($sql, $args= NULL) 
+    public function fetch_query($sql, $prefix, $args= NULL) 
     {
-        $query = $this->run_query($sql, $args);
+        $query = $this->run_query($sql, $prefix, $args);
         return $query->fetch();
     }
 }

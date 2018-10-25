@@ -1,3 +1,15 @@
+# v0.7.0
+## 05/17/2018
+
+1. [](#improved)
+    * Restored coding with base64.
+
+# v0.6.0
+## 05/15/2018
+
+1. [](#bugfix)
+    * Fix characters that do not appear in Russian [#8](https://github.com/iusvar/grav-plugin-printfriendly/issues/8) and Turkish [#7](https://github.com/iusvar/grav-plugin-printfriendly/issues/7) language. 
+
 # v0.5.0
 ## 08/03/2017
 

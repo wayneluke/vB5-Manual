@@ -1,11 +1,9 @@
-[segment="variable"]
-~image~
 ## ~title~
+
 ~description~
-~help~
-~additionalinfo~
 
 - Variable Name: ~varname~
 - Data Type: ~type~
-- Default Value: ~defaultvalue~
-[/segment]
+- Default Value(s):
+~defaultvalue~
+- Template List: ~templatelist~

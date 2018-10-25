@@ -1,3 +1,19 @@
+# v1.6.1
+## 07/12/2018
+
+3. [](#bugfix)
+  * Fixed parsing tags other than links [#24](https://github.com/Sommerregen/grav-plugin-external-links/pull/24) (Fix loading of a href element)
+
+# v1.6.0
+## 02/22/2018
+
+1. [](#new)
+  * Check for page redirects [#22](https://github.com/Sommerregen/grav-plugin-external-links/pull/22) (Check for redirecting pages if `links.redirects` is enabled, thanks to [@karfau](https://github.com/karfau))
+2. [](#improved)
+  * Set `rel="noopener noreferrer"` to all external links [#21](https://github.com/Sommerregen/grav-plugin-external-links/issues/21)
+  * Updated French translation strings [#19](https://github.com/Sommerregen/grav-plugin-external-links/pull/19)
+  * Improved `README.md` and YAML files
+
 # v1.5.3
 ## 02/18/2017
 

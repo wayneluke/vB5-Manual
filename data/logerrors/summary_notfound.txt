@@ -1,0 +1,51 @@
+-
+    url: 'http://vbulletin5/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff'
+    count: 33
+-
+    url: 'http://vbulletin5/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff2'
+    count: 33
+-
+    url: 'http://vbulletin5/manual/assets/images/ui-bg_inset-hard_100_fcfdfd_1x100.png'
+    count: 20
+-
+    url: 'http://vbulletin5/manual/assets/images/ui-icons_0078ae_256x240.png'
+    count: 20
+-
+    url: 'http://localhost/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff'
+    count: 10
+-
+    url: 'http://localhost/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff2'
+    count: 9
+-
+    url: 'http://localhost/manual/assets/images/ui-bg_inset-hard_100_fcfdfd_1x100.png'
+    count: 8
+-
+    url: 'http://localhost/manual/assets/images/ui-icons_0078ae_256x240.png'
+    count: 6
+-
+    url: 'http://vbulletin/manual/assets/images/ui-bg_inset-hard_100_fcfdfd_1x100.png'
+    count: 2
+-
+    url: 'http://vbulletin/manual/assets/images/ui-icons_0078ae_256x240.png'
+    count: 2
+-
+    url: 'http://vbulletin/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff'
+    count: 2
+-
+    url: 'http://vbulletin/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff2'
+    count: 2
+-
+    url: 'http://vbulletin5/manual/admin_control_panel/customizing_vbulletin/styles/stylevars/stylevar_reference'
+    count: 1
+-
+    url: 'http://vbulletin5/manual/fonts/fontawesome-webfont.ttf'
+    count: 1
+-
+    url: 'http://vbulletin5/manual/fonts/fontawesome-webfont.woff'
+    count: 1
+-
+    url: 'http://vbulletin5/manual/fonts/fontawesome-webfont.woff2'
+    count: 1
+-
+    url: 'http://vbulletin5/manual/user/pages/doc_generators/index.php'
+    count: 1
