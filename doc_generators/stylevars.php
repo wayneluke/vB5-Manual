@@ -41,7 +41,7 @@ function getInheritanceMap ($stylevarid, $value, $directory) {
     $inherited = $dbConnect->fetch_query($stylevarQueries['retrievemap'], [$stylevarid]);
 
     if (!isset($inherited['inherited_from'])) {
-    // Update Mapping.
+    // Inheritance Map doesn't exist so we need to create it.
         $ivalue=explode(".",$value,2);
         $inherited['stylevarid'] = $stylevarid;
         $inherited['value'] = $ivalue[1];
