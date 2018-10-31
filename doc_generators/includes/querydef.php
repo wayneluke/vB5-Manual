@@ -71,9 +71,9 @@ class QueryDefs {
         'templates'
             => "select title from {TABLE_PREFIX}template where styleid=-1 AND title LIKE 'css_%' AND template LIKE CONCAT('%',?,'%')",
         'retrievemap'
-            => 'select inherited_from, relative_url from documentation_stylevarmap where stylevarid=?',
-        'variablemap'
-            => "replace into documentation_stylevarmap (`stylevarid`,`inherited_from`,`relative_url`) values (?, ?, ?)",
+            => 'select value, inherited_from, relative_url from documentation_stylevarmap where stylevarid=?',
+        'buildmap'
+            => "insert into documentation_stylevarmap values (?, ?, ?, ?)",
     ];
 
     private $permissions = [
@@ -87,8 +87,8 @@ class QueryDefs {
         }
     }
 
-    public function getVersion($db, $prefix)
+    public function getVersion($db)
     {
-        return $db->run_query($this->version, $prefix)->fetchColumn();
+        return $db->run_query($this->version)->fetchColumn();
     }
 }

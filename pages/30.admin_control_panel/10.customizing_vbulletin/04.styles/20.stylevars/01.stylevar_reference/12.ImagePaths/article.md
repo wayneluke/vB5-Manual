@@ -10,14 +10,14 @@ taxonomy:
 visible: false
 template: article
 version: 5.4.5 Alpha 4
-date: 10/15/2018 09:05am
+date: 10/29/2018 03:46pm
 ---
 
 
 
 [toc]
 
-## Favicon File Path
+## [Favicon File Path](#favicon)
 
 This stylevar controls the file path of the favicon. The favicon is the small image displayed in the browser address bar and near browser page title.
 
@@ -28,7 +28,7 @@ This stylevar controls the file path of the favicon. The favicon is the small im
 
 - Template List: 
 
-## imgdir_attach
+## [imgdir_attach](#imgdir_attach)
 
 
 
@@ -39,7 +39,7 @@ This stylevar controls the file path of the favicon. The favicon is the small im
 
 - Template List: 
 
-## Button Image Directory
+## [Button Image Directory](#imgdir_button)
 
 
 
@@ -50,7 +50,7 @@ This stylevar controls the file path of the favicon. The favicon is the small im
 
 - Template List: 
 
-## Misc Images Directory
+## [Misc Images Directory](#imgdir_misc)
 
 
 
@@ -61,7 +61,7 @@ This stylevar controls the file path of the favicon. The favicon is the small im
 
 - Template List: css_b_icon.css
 
-## Image Path for the Icon Sprite Image
+## [Image Path for the Icon Sprite Image](#imgdir_spriteiconsvb)
 
 This is the relative path to the directory where the &quot;sprite_icons_vb_ltr.png&quot; and &quot;sprite_icons_vb_rtl.png&quot; files are found. This is relative to the main vBulletin directory and should not start or end with a forward slash (/).<br /><br /><b>Note:</b> This Style Variable is no longer used by the default vBulletin style, but will continue to work for any custom styles that use it.
 
@@ -71,7 +71,7 @@ This is the relative path to the directory where the &quot;sprite_icons_vb_ltr.p
 
 - Template List: css_b_button.css, css_b_editor.css, css_b_icon.css, css_utilities.css
 
-## Item Status Icon Folder
+## [Item Status Icon Folder](#imgdir_statusicon)
 
 
 
@@ -82,7 +82,7 @@ This is the relative path to the directory where the &quot;sprite_icons_vb_ltr.p
 
 - Template List: 
 
-## Title Image
+## [Title Image](#titleimage)
 
 This is your logo or title image. Set to the path of the logo you want to use.
 

@@ -1,15 +1,15 @@
 -
     url: 'http://vbulletin5/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff'
-    count: 33
+    count: 64
 -
     url: 'http://vbulletin5/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff2'
-    count: 33
+    count: 63
 -
     url: 'http://vbulletin5/manual/assets/images/ui-bg_inset-hard_100_fcfdfd_1x100.png'
-    count: 20
+    count: 45
 -
     url: 'http://vbulletin5/manual/assets/images/ui-icons_0078ae_256x240.png'
-    count: 20
+    count: 45
 -
     url: 'http://localhost/manual/user/themes/vbulletin-theme/fonts/fontawesome-webfont.woff'
     count: 10
@@ -36,7 +36,7 @@
     count: 2
 -
     url: 'http://vbulletin5/manual/admin_control_panel/customizing_vbulletin/styles/stylevars/stylevar_reference'
-    count: 1
+    count: 2
 -
     url: 'http://vbulletin5/manual/fonts/fontawesome-webfont.ttf'
     count: 1
@@ -45,6 +45,9 @@
     count: 1
 -
     url: 'http://vbulletin5/manual/fonts/fontawesome-webfont.woff2'
+    count: 1
+-
+    url: 'http://vbulletin5/manual/output/stylevars/Bbcode'
     count: 1
 -
     url: 'http://vbulletin5/manual/user/pages/doc_generators/index.php'

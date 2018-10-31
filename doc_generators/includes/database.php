@@ -3,13 +3,13 @@
 
 /**
  * PDO Wrapper class for the Document Generators.
- * 
- * A Basic Wrapper for PDO to be used with the Documentant Generators.
- * From - https://phpdelusions.net/pdo/pdo_wrapper
  */
 
 class Database extends PDO
 {
+
+    protected $dbPrefix = '';
+
     /**
      * __construct
      * 
@@ -21,7 +21,7 @@ class Database extends PDO
      * @param string $password Database Password (optional)
      * @param array $options An array of options sent to PDO.
      */
-    public function __construct($host, $dbname, $username = NULL, $password = NULL, $options = [])
+    public function __construct($host, $dbname, $username = '', $password = '', $prefix=NULL, $options = [])
     {
         $default_options = [
             PDO::ATTR_ERRMODE               => PDO::ERRMODE_EXCEPTION,
@@ -30,6 +30,8 @@ class Database extends PDO
         ];
         $options = array_replace($default_options, $options);
         $dsn = 'mysql:host='.$host.';dbname='.$dbname;
+        $this->dbPrefix = $prefix;
+
         parent::__construct($dsn, $username, $password, $options);
     }
 
@@ -43,20 +45,27 @@ class Database extends PDO
      * @param array $args An array of values to be used for parameters in the query.
      * @return $stmt object holding the query results as an associative array.
      */
-    public function run_query($sql, $prefix, $args = NULL)
+    public function run_query($sql, $args = NULL)
     {
-        $sql = str_replace("{TABLE_PREFIX}", $prefix, $sql);
+        $sql = str_replace("{TABLE_PREFIX}", $this->dbPrefix, $sql);
         if (!$args)
         {
              return $this->query($sql);
         }
         $stmt = $this->prepare($sql);
-        $stmt->execute($args);
+        try {
+            $stmt->execute($args);
+        } catch (PDOException $e) {
+            echo $sql . "\n\r";
+            echo r_print($args) . "\n\r";
+            echo $e;
+            die();
+        }
         return $stmt;
     }
 
     /**
-     * run-query
+     * fetch-query
      * 
      * Wrapper to run a query that will return a single row of results.
      * 
@@ -64,9 +73,26 @@ class Database extends PDO
      * @param array $args An array of values to be used for parameters in the query.
      * @return The result of the query in an array.
      */
-    public function fetch_query($sql, $prefix, $args= NULL) 
+    public function fetch_query($sql, $args= NULL) 
     {
-        $query = $this->run_query($sql, $prefix, $args);
+        $query = $this->run_query($sql, $args);
         return $query->fetch();
+    }
+
+    /**
+     * insert
+     * 
+     * Will insert a row into the database. If the row already exists, it will be replaced.
+     *
+     * @param string $table The table name to build the insert query for.
+     * @param array $data An array of values to insert into the table. The array keys should match the name of the table's fields.
+     * @return array
+     */
+    public function insert(string $table, array $data) : array
+    {
+        $sql = "REPLACE INTO $table(" . implode(",",array_keys($data)).") VALUES(:" . implode(",:",array_keys($data)).")";
+        $stmt = $this->prepare($sql);
+        $stmt->execute($data);
+        return $this->lastInsertId();
     }
 }

@@ -10,27 +10,27 @@ taxonomy:
 visible: false
 template: article
 version: 5.4.5 Alpha 4
-date: 10/15/2018 09:05am
+date: 10/29/2018 03:46pm
 ---
 
 
 
 [toc]
 
-## Footer Bar Background
+## [Footer Bar Background](#footer_background)
 
 Controls the background color and image for the footer bar.
 
 - Variable Name: footer_background
 - Data Type: background
 - Default Value(s):
-  - color: global_palette_accent_01 **(Inherited)**
+color [global_palette_accent_01](/output/stylevars/Footer#footer_background) **Inherited**
   - x: 0
   - y: 0
 
 - Template List: css_global.css
 
-## Footer Border
+## [Footer Border](#footer_border)
 
 Controls the border width, style, and color for the top border on the footer block.
 
@@ -40,22 +40,22 @@ Controls the border width, style, and color for the top border on the footer blo
   - units: px
   - width: 1
   - style: solid
-  - color: global_palette_fill_02 **(Inherited)**
+color [global_palette_fill_02](/output/stylevars/Footer#footer_border) **Inherited**
 
 - Template List: css_global.css
 
-## Footer Copyright Text Color
+## [Footer Copyright Text Color](#footer_copyright_text_color)
 
 Controls the text color for the footer copyright text.
 
 - Variable Name: footer_copyright_text_color
 - Data Type: color
 - Default Value(s):
-  - color: global_palette_text_01 **(Inherited)**
+color [global_palette_text_01](/output/stylevars/Footer#footer_copyright_text_color) **Inherited**
 
 - Template List: css_global.css
 
-## Footer Font Style
+## [Footer Font Style](#footer_font_style)
 
 Controls the font family, size, and style for the footer.
 
@@ -68,7 +68,7 @@ Controls the font family, size, and style for the footer.
 
 - Template List: css_global.css
 
-## Footer Height
+## [Footer Height](#footer_height)
 
 Controls the height of the footer bar.
 
@@ -80,18 +80,18 @@ Controls the height of the footer bar.
 
 - Template List: css_global.css
 
-## Footer List Item Color
+## [Footer List Item Color](#footer_list_item_color)
 
 Controls the text color for the footer links.
 
 - Variable Name: footer_list_item_color
 - Data Type: color
 - Default Value(s):
-  - color: global_palette_text_03 **(Inherited)**
+color [global_palette_text_03](/output/stylevars/Footer#footer_list_item_color) **Inherited**
 
 - Template List: css_global.css
 
-## Footer List Item Color Hover
+## [Footer List Item Color Hover](#footer_list_item_color_hover)
 
 Controls the text color for the footer links when the mouse is over them.
 
@@ -101,18 +101,18 @@ Controls the text color for the footer links when the mouse is over them.
 
 - Template List: css_global.css
 
-## Footer List Item Divider Color
+## [Footer List Item Divider Color](#footer_list_item_divider_color)
 
 Controls the divider color between footer links.
 
 - Variable Name: footer_list_item_divider_color
 - Data Type: color
 - Default Value(s):
-  - color: global_palette_fill_02 **(Inherited)**
+color [global_palette_fill_02](/output/stylevars/Footer#footer_list_item_divider_color) **Inherited**
 
 - Template List: css_global.css
 
-## Footer List Item Spacing
+## [Footer List Item Spacing](#footer_list_item_spacing)
 
 Controls the spacing between the footer links.
 
@@ -124,7 +124,7 @@ Controls the spacing between the footer links.
 
 - Template List: css_global.css
 
-## Footer List Item Text Decoration
+## [Footer List Item Text Decoration](#footer_list_item_text_decoration)
 
 Controls the text decoration for the footer links.
 
@@ -139,7 +139,7 @@ Controls the text decoration for the footer links.
 
 - Template List: css_global.css
 
-## Footer List Item Text Decoration Hover
+## [Footer List Item Text Decoration Hover](#footer_list_item_text_decoration_hover)
 
 Controls the text decoration for the footer links when the mouse is over them.
 
@@ -154,7 +154,7 @@ Controls the text decoration for the footer links when the mouse is over them.
 
 - Template List: css_global.css
 
-## Footer Text Transform
+## [Footer Text Transform](#footer_text_transform)
 
 Controls text transformation for the text in the footer.
 

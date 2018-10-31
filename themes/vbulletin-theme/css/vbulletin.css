@@ -185,3 +185,11 @@ ol > li::before {
 #chapter .columns li {
     list-style: none;
 }
+
+.palette {
+    display:inline-block;
+    vertical-align:middle;
+    border:1px solid #CECECE;
+    width:3.5em;
+    height:16pt;
+}

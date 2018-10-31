@@ -18,18 +18,18 @@ $queries = new QueryDefs();
 
 $moduleQueries = $queries->getQueries('modules');
 
-$dbConnect = new Database($dbHost,$dbName,$dbUser,$dbPass);
+$dbConnect = new Database($dbHost, $dbName, $dbUser, $dbPass, $dbPrefix);
 
 if (!empty($dbConnect)) {
     echo "Database Connection Successful\n\r";
 }
 
-$version = $queries->getVersion($dbConnect, $dbPrefix);
+$version = $queries->getVersion($dbConnect);
 $now=date('n/d/Y h:ia');
 
 $pageCounter=0;
 
-$categories = $dbConnect->run_query($moduleQueries['categories'], $dbPrefix);
+$categories = $dbConnect->run_query($moduleQueries['categories']);
 foreach ($categories as $category) {
     //Skip Abstract Category for now.
     if ($category['title'] === 'Abstract') {continue;}
@@ -39,14 +39,14 @@ foreach ($categories as $category) {
     $moduleDir = $outDir . $separator . ++$pageCounter . '.' . $category['title'];
     createDirectory($moduleDir);
     
-    $modules = $dbConnect->run_query($moduleQueries['widget'], $dbPrefix, [$category['title']]);
+    $modules = $dbConnect->run_query($moduleQueries['widget'], [$category['title']]);
     $content = '';
     foreach ($modules as $module)
     {
 
-        $module['title'] = $dbConnect->run_query($moduleQueries['templatephrase'], $dbPrefix, [$module['widgetid']])->fetchColumn();
+        $module['title'] = $dbConnect->run_query($moduleQueries['templatephrase'], [$module['widgetid']])->fetchColumn();
         if ($module['titlephrase'] != NULL) {
-            $module['title'] = $dbConnect->run_query($moduleQueries['titlephrase'], $dbPrefix, [$module['widgetid']])->fetchColumn();
+            $module['title'] = $dbConnect->run_query($moduleQueries['titlephrase'], [$module['widgetid']])->fetchColumn();
         }
         echo "\t" . $module['title'] . " - (ID:" . $module['widgetid'] . ")\n";
         $content .= $module['title'] . "\n";

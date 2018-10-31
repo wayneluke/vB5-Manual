@@ -17,7 +17,7 @@ $imageTokens=['~imageurl~','~caption~'];
 $queries = new QueryDefs();
 $optionQueries = $queries->getQueries('options');
 
-$dbConnect = new Database($dbHost,$dbName,$dbUser,$dbPass);
+$dbConnect = new Database($dbHost,$dbName,$dbUser,$dbPass );
 
 if (!empty($dbConnect)) {
     echo "Database Connection Successful\n\r";

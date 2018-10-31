@@ -10,27 +10,27 @@ taxonomy:
 visible: false
 template: article
 version: 5.4.5 Alpha 4
-date: 10/15/2018 09:05am
+date: 10/29/2018 03:46pm
 ---
 
 
 
 [toc]
 
-## Bbcode [code] Background
+## [Bbcode [code] Background](#bbcode_code_background)
 
 Controls the background color and image for the Bbcode [code] display.
 
 - Variable Name: bbcode_code_background
 - Data Type: background
 - Default Value(s):
-  - color: global_palette_fill_02 **(Inherited)**
+color [global_palette_fill_02](/output/stylevars/Bbcode#bbcode_code_background) **Inherited**
   - x: 0
   - y: 0
 
 - Template List: css_global.css, css_reset.css
 
-## Bbcode [code] Border
+## [Bbcode [code] Border](#bbcode_code_border)
 
 Controls the border width, style, and color for the Bbcode [code] display.
 
@@ -40,11 +40,11 @@ Controls the border width, style, and color for the Bbcode [code] display.
   - units: px
   - width: 1
   - style: solid
-  - color: global_palette_fill_02 **(Inherited)**
+color [global_palette_fill_02](/output/stylevars/Bbcode#bbcode_code_border) **Inherited**
 
 - Template List: css_global.css
 
-## BBCode [code] Font Size
+## [BBCode [code] Font Size](#bbcode_code_fontsize)
 
 This stylevar controls the size of BBCode [code] font.
 
@@ -56,7 +56,7 @@ This stylevar controls the size of BBCode [code] font.
 
 - Template List: css_global.css
 
-## BBCode [code] Line Height
+## [BBCode [code] Line Height](#bbcode_code_line_height)
 
 Controls the line height for bbcode [code] blocks. This needs to be set as a pixel line height (set units to px) for the block height calculation to work correctly.
 
@@ -68,14 +68,14 @@ Controls the line height for bbcode [code] blocks. This needs to be set as a pix
 
 - Template List: css_global.css
 
-## Bbcode [quote] Background
+## [Bbcode [quote] Background](#bbcode_quote_background)
 
 Controls the background color and image for the Bbcode [quote] display.
 
 - Variable Name: bbcode_quote_background
 - Data Type: background
 - Default Value(s):
-  - color: global_palette_fill_02 **(Inherited)**
+color [global_palette_fill_02](/output/stylevars/Bbcode#bbcode_quote_background) **Inherited**
   - x: 0
   - y: 0
 
