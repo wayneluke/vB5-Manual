@@ -27,7 +27,7 @@ echo 'MD Files with less than 200 bytes should be considered incomplete.' . PHP_
 foreach($it as $file)
 {
     $size ="";
-    $complete= '[x]';
+    $complete= '';
 
     if ($file->isdir()) {
         $path = $file->getBasename();
