@@ -1,2 +1,5 @@
-/doc_generators/output
-/doc_generators/config/config.php
+/doc_generators/*
+/doc_generators/*
+/data/logerrors/*
+data/logerrors/notfound.txt
+data/logerrors/summary_notfound.txt
