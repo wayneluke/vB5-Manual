@@ -1,4 +1,13 @@
 <?php
+
+/**
+ * Allows you to insert inline buttons within the page content.
+ * 
+ * Custom BBCode to add a button element inline within the documentation.
+ * Format: [button]text[/button]
+ * 
+ * @author Wayne Luke <wayne.luke@vbulletin.com>
+ */
 namespace Grav\Plugin\Shortcodes;
 
 use Thunder\Shortcode\Shortcode\ShortcodeInterface;

@@ -1,3 +1,38 @@
+# v3.1.1
+## 03/12/2019
+
+1. [](#bugfix)
+    * Reverted accidental change of default parser.  Should be `regular`
+
+# v3.1.0
+## 02/28/2019
+
+1. [](#improved)
+    * Modified priority of `onPluginsInitialized` to fire earlier
+1. [](#bugfix)
+    * New language shortcode, for example `[lang=en]...[/lang]`
+
+# v3.0.1
+## 02/03/2019
+
+1. [](#bugfix)
+    * Fixed issues with `0` param and `regular` parser [#14](https://github.com/getgrav/grav-plugin-shortcode-core/issues/14) [#57](https://github.com/getgrav/grav-plugin-shortcode-core/issues/57) [shortcode-ui#29](https://github.com/getgrav/grav-plugin-shortcode-ui/issues/29) [shortcode-ui#6](https://github.com/getgrav/grav-plugin-shortcode-ui/issues/26)
+
+# v3.0.0
+## 12/19/2018
+
+1. [](#new)
+    * Update to latest Shortcode library `v0.7.0` which has over **10X performance** for default regular parser
+    * Added an option `admin_pages_only` to only process actual `user/pages/` based pages and not dynamic pages to increase performance
+
+# v2.7.3
+## 12/07/2018
+
+1. [](#new)
+    * Added a new `figure` shortcode [#51](https://github.com/getgrav/grav-plugin-shortcode-core/pull/51)
+1. [](#bugfix)
+    * Fix empty space at the end of a line [#54](https://github.com/getgrav/grav-plugin-shortcode-core/pull/54)
+
 # v2.7.2
 ## 10/26/2018
 
@@ -55,7 +90,7 @@
 
 1. [](#new)
     * Added **new** `columns` shortcode for CSS columns support
-    
+
 # v2.4.0
 ## 01/17/2017
 
@@ -77,7 +112,7 @@
 1. [](#improved)
     * renamed internal `contentMeta` variables to `shortcodeMeta` and `shortcodeAssets`
     * Update to latest Shortcode library
-    
+
 # v2.3.0
 ## 05/20/2016
 
@@ -101,7 +136,7 @@
 
 1. [](#new)
     * Added **new** `notice` shortcode
-1. [](#improved)    
+1. [](#improved)
     * Updated to latest Shortcode library version
 
 # v2.0.2
@@ -117,7 +152,7 @@
     * Support **modular** pages by populating Twig variables in `onTwigPageVariables()` event #8
 1. [](#bugfix)
     * Better more flexible regex in the Markdown **block** definition for more reliable markdown in shortcodes. #3
-    
+
 # v2.0.0
 ## 02/11/2016
 
@@ -127,7 +162,7 @@
     * Added new `ShortcodeManager::reset()` methods
 1. [](#improved)
     * Completely refactored the plugin to use a new extensible mechanism that makes it easier to manage multiple shortcodes
-    
+
 # v1.4.0
 ## 02/03/2016
 

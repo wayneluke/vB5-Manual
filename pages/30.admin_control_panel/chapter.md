@@ -1,5 +1,5 @@
 ---
-title: 'Admin Control Panel'
+title: 'AdminCP'
 taxonomy:
     book:
         - manual

@@ -1,3 +1,16 @@
+# v0.7.2
+## 11/05/2018
+
+1. [](#bugfix)
+    * Add raw filter in the twig function.
+    
+# v0.7.1
+## 11/05/2018
+
+1. [](#bugfix)
+    * [#9](https://github.com/iusvar/grav-plugin-printfriendly/issues/9) Fix the reserved indicator "%" that cannot start a plain scalar.
+    * Make the plugin to work with Twig auto-escaping turned on and then with the Quark theme.
+    
 # v0.7.0
 ## 05/17/2018
 

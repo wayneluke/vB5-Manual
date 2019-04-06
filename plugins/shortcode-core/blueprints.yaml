@@ -1,5 +1,5 @@
 name: Shortcode Core
-version: 2.7.2
+version: 3.1.1
 description: "This plugin provides the core functionality for shortcode plugins"
 icon: code
 author:
@@ -13,7 +13,7 @@ bugs: https://github.com/getgrav/grav-plugin-shortcode-core/issues
 license: MIT
 
 dependencies:
-    - { name: grav, version: '~1.1' }
+    - { name: grav, version: '~1.5' }
 
 form:
   validation: strict
@@ -43,7 +43,19 @@ form:
 
     active_admin:
       type: toggle
-      label: Activated in admin
+      label: Activated in Admin
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    admin_pages_only:
+      type: toggle
+      label: Admin Real-Pages Only
+      help: When activate, only process real-pages
       highlight: 1
       default: 1
       options:

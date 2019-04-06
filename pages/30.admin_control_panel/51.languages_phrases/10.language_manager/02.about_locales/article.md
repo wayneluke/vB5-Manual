@@ -1,0 +1,310 @@
+---
+title: About Locales
+---
+
+Locales tell the system how to display characters on your system. A locale is often required to show non-English UTF-8 characters on the page. This is a list of locales that works with vBulletin. Each locale needs to be installed in the Operating System to work properly.
+
+## Standard vBulletin Languages
+
+<table>
+    <tr>
+        <th>Language</th>
+        <th>Locale</th>
+        <th>Base Character Set</th>
+    </tr>
+    <tr>
+        <td>English (US)</td>
+        <td>en_us.UTF8</td>
+        <td>ISO-8859-1</td>
+    </tr>
+    <tr>
+        <td>German (DU)</td>
+        <td>de_DE.UTF-8</td>
+        <td>WINDOWS-1252</td>
+    </tr>
+    <tr>
+        <td>French</td>
+        <td>fr_FR.UTF-8 <i>or</i><br />fr_CH.UTF-8 <i>or</i><br />fr_BE.UTF-8</td>
+        <td>WINDOWS-1252</td>
+    </tr>
+    <tr>
+        <td>Spanish</td>
+        <td>es_ES.UTF-8</td>
+        <td>WINDOWS-1252</td>
+    </tr>
+</table>
+
+## Other Languages
+<table>
+    <tr>
+      <th>Language</th>
+      <th>Locale</th>
+      <th>Base Character Set</th>
+    </tr>
+    <tr>
+    <td>Afrikaans</td>
+    <td>af_ZA.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Albanian</td>
+    <td>sq_AL.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Arabic</td>
+    <td>ar_SA.UTF-8</td>
+    <td>WINDOWS-1256</td></tr>
+  <tr>
+    <td>Basque</td>
+    <td>eu_ES.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Belarusian</td>
+    <td>be_BY.UTF-8</td>
+    <td>WINDOWS-1251</td></tr>
+  <tr>
+    <td>Bosnian</td>
+    <td>bs_BA.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Bulgarian</td>
+    <td>bg_BG.UTF-8</td>
+    <td>WINDOWS-1251</td></tr>
+  <tr>
+    <td>Catalan</td>
+    <td>ca_ES.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Croatian</td>
+    <td>hr_HR.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Chinese (Simplified)</td>
+    <td>zh_CN.UTF-8</td>
+    <td>CP936</td></tr>
+  <tr>
+    <td>Chinese (Traditional)</td>
+    <td>zh_TW.UTF-8</td>
+    <td>CP950</td></tr>
+  <tr>
+    <td>Czech</td>
+    <td>cs_CZ.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Danish</td>
+    <td>da_DK.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Dutch</td>
+    <td>nl_NL.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>English (AUS)</td>
+    <td>en.UTF-8</td>
+    <td>ISO-8859-1</td></tr>
+  <tr>
+    <td>Estonian</td>
+    <td>et_EE.UTF-8</td>
+    <td>WINDOWS-1257</td></tr>
+  <tr>
+    <td>Farsi</td>
+    <td>fa_IR.UTF-8</td>
+    <td>WINDOWS-1256</td></tr>
+  <tr>
+    <td>Filipino</td>
+    <td>ph_PH.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Finnish</td>
+    <td>fi_FI.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>French (Canada)</td>
+    <td>fr_CA.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Gaelic</td>
+    <td>ga.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Gallego</td>
+    <td>gl_ES.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Georgian</td>
+    <td>ka_GE.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>German</td>
+    <td>de_DE.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Greek</td>
+    <td>el_GR.UTF-8</td>
+    <td>WINDOWS-1253</td></tr>
+<tr>
+    <td>Gujarati</td>
+    <td>gu.UTF-8</td>
+    <td>&nbsp; </td></tr>
+  <tr>
+    <td>Hebrew</td>
+    <td>he_IL.utf8</td>
+    <td>WINDOWS-1255</td></tr>
+  <tr>
+    <td>Hindi</td>
+    <td>hi_IN.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>Hungarian</td>
+    <td>hu.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Icelandic</td>
+    <td>is_IS.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Indonesian</td>
+    <td>id_ID.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Italian</td>
+    <td>it_IT.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Japanese</td>
+    <td>ja_JP.UTF-8</td>
+    <td>CP932</td></tr>
+  <tr>
+    <td>Kannada</td>
+    <td>kn_IN.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>Khmer</td>
+    <td>km_KH.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>Korean</td>
+    <td>ko_KR.UTF-8</td>
+    <td>EUC-KR</td></tr>
+  <tr>
+    <td>Lao</td>
+    <td>lo_LA.UTF-8</td>
+    <td>WINDOWS-1257</td></tr>
+  <tr>
+    <td>Lithuanian</td>
+    <td>lt_LT.UTF-8</td>
+    <td>WINDOWS-1257</td></tr>
+  <tr>
+    <td>Latvian</td>
+    <td>lat.UTF-8</td>
+    <td>WINDOWS-1257</td></tr>
+  <tr>
+    <td>Malayalam</td>
+    <td>ml_IN.UTF-8</td>
+    <td>x-iscii-ma</td></tr>
+  <tr>
+    <td>Malaysian</td>
+    <td>ms_MY.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Maori (Ngai Tahu)</td>
+    <td>mi_NZ.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Maori (Waikoto Uni)</td>
+    <td>mi_NZ.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Mongolian</td>
+    <td>mn.UTF-8</td>
+    <td>WINDOWS-1251</td></tr>
+  <tr>
+    <td>Norwegian</td>
+    <td>no_NO.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Norwegian (Primary)</td>
+    <td>no_NO.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Nynorsk</td>
+    <td>nn_NO.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Polish</td>
+    <td>pl.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Portuguese</td>
+    <td>pt_PT.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Portuguese (Brazil)</td>
+    <td>pt_BR.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Romanian</td>
+    <td>ro_RO.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Russian</td>
+    <td>ru_RU.UTF-8</td>
+    <td>WINDOWS-1251</td></tr>
+  <tr>
+    <td>Samoan</td>
+    <td>Maori.1252</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Serbian</td>
+    <td>sr_CS.UTF-8</td>
+    <td>WINDOWS-1251</td></tr>
+  <tr>
+    <td>Slovak</td>
+    <td>sk_SK.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Slovenian</td>
+    <td>sl_SI.UTF-8</td>
+    <td>WINDOWS-1250</td></tr>
+  <tr>
+    <td>Somali</td>
+    <td>so_SO.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>Swedish</td>
+    <td>sv_SE.UTF-8</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Tagalog</td>
+    <td>tl.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>Tamil</td>
+    <td>ta_IN.UTF-8</td>
+    <td>&nbsp;</td></tr>
+  <tr>
+    <td>Thai</td>
+    <td>th_TH.UTF-8</td>
+    <td>WINDOWS-874</td></tr>
+  <tr>
+    <td>Tongan</td>
+    <td>mi_NZ.UTF-8'</td>
+    <td>WINDOWS-1252</td></tr>
+  <tr>
+    <td>Turkish</td>
+    <td>tr_TR.UTF-8</td>
+    <td>WINDOWS-1254</td></tr>
+  <tr>
+    <td>Ukrainian</td>
+    <td>uk_UA.UTF-8</td>
+    <td>WINDOWS-1251</td></tr>
+  <tr>
+    <td>Vietnamese</td>
+    <td>vi_VN.UTF-8</td>
+    <td>WINDOWS-1258</td></tr>
+</table>
+
+<ul>
+    <li> Language: name of the language</li>
+    <li> Locale: Locale string to be used for UTF-8 Support.</li>
+    <li> Alternative: Alternative Character Set for the language. May not support UTF-8.</li>
+  </ul>
